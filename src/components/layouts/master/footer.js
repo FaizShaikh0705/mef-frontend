@@ -52,7 +52,7 @@ const Footer = () => {
                   <Link href="/#">Home</Link>
                 </li>
                 <li>
-                  <Link href="/aboutus">About</Link>
+                  <Link href="/about">About</Link>
                 </li>
                 <li>
                   <Link href="/#shop">Shop</Link>
@@ -69,16 +69,19 @@ const Footer = () => {
               <h3 className="mb-4">Support</h3>
               <ul className={styles["info-list"]}>
                 <li>
-                  <Link href="/refund">Refund Policy</Link>
+                  <Link href="/refundpolicy">Refund Policy</Link>
                 </li>
                 <li>
-                  <Link href="/privacy">Privacy Policy</Link>
+                  <Link href="/privacypolicy">Privacy Policy</Link>
                 </li>
                 <li>
-                  <Link href="/shipping">Shipping Policy</Link>
+                  <Link href="/shippingpolicy">Shipping Policy</Link>
                 </li>
                 <li>
-                  <Link href="/terms">Terms of Service </Link>
+                  <Link href="/termsandconditionspolicy">Terms And Conditions Policy</Link>
+                </li>
+                <li>
+                  <Link href="/returnsandexchangespolicy">Returns And Exchanges Policy</Link>
                 </li>
               </ul>
             </div>
@@ -130,7 +133,7 @@ const Footer = () => {
                 </li>
                 <li className={styles["footer-links"]}>
                   <Link href='https://www.youtube.com/@elite__cipher' target="blank">
-                    <FaYoutube size={24}/>
+                    <FaYoutube size={24} />
                   </Link>
                 </li>
                 {/* <li className={styles["footer-links"]}>
