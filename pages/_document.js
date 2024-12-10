@@ -6,7 +6,7 @@ class MyDocument extends Document {
             <Html>
                 <Head>
                     <meta charset="utf-8" />
-                    {/* <link rel="icon" href="/images/favicon.png" /> */}
+                    <link rel="icon" href="/images/favicon.png" />
 
                     <meta property="og:title" content="MEF" />
                     <meta property="og:description" content="MEF" />
