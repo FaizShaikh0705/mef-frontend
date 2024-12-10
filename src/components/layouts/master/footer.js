@@ -18,24 +18,24 @@ import styles from "./footer.module.scss";
 
 const Footer = () => {
 
-  const [showWhatsapp, setShowWhatsapp] = useState(false);
+  // const [showWhatsapp, setShowWhatsapp] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > window.innerHeight * 0.50) {
-        setShowWhatsapp(true);
-      } else {
-        setShowWhatsapp(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > window.innerHeight * 0.50) {
+  //       setShowWhatsapp(true);
+  //     } else {
+  //       setShowWhatsapp(false);
+  //     }
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
+  //   window.addEventListener('scroll', handleScroll);
 
-    // Cleanup on component unmount
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  //   // Cleanup on component unmount
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
   return (
     <>
@@ -192,11 +192,11 @@ const Footer = () => {
           </Row>
         </Container>
       </section>
-      {showWhatsapp && (
+      {/* {showWhatsapp && (
         <Link href="https://wa.me/+918104583429" target="_blank" className="whatsapp-icon" aria-label="Chat with us on WhatsApp">
           <Image src='/images/whatsapp.png' width='45' height='20' />
         </Link>
-      )}
+      )} */}
       <ScrollToTop
         smooth
         color="#fff"
