@@ -8,8 +8,8 @@ class MyDocument extends Document {
                     <meta charset="utf-8" />
                     <link rel="icon" href="/images/favicon.png" />
 
-                    <meta property="og:title" content="MEF" />
-                    <meta property="og:description" content="MEF" />
+                    <meta property="og:title" content="MKM Parfum" />
+                    <meta property="og:description" content="MKM Parfum" />
                     {/* <meta property="og:image" content="/images/displayimagenew.png" /> */}
                     {/* <meta property="og:image:width" content="800" /> */}
                     {/* <meta property="og:image:height" content="600" /> */}
