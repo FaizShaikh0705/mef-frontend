@@ -8,7 +8,7 @@ const header = () => {
     return (
         <Navbar expand="lg" className="bg-body-tertiary" style={{ height: '5rem' }}>
             <Container>
-                <Navbar.Brand href="/" style={{ fontSize: "32px" }}>MKM Parfum</Navbar.Brand>
+                <Navbar.Brand href="/"className={styles.hname}>MKM Parfum</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav className="mx-auto">
@@ -20,8 +20,8 @@ const header = () => {
                     </Nav>
                 </Navbar.Collapse>
                 <Nav className={styles.navcrtSec}>
-                    <Nav.Link href="/cart"> <BsBag size={24} /></Nav.Link>
-                    <Nav.Link ><IoSearchOutline size={24} /></Nav.Link>
+                    <Nav.Link href="/cart" className={styles.navcrtmenu}> <BsBag size={24} /></Nav.Link>
+                    <Nav.Link className={styles.navcrtmenu} ><IoSearchOutline size={24} /></Nav.Link>
                 </Nav>
             </Container>
         </Navbar>

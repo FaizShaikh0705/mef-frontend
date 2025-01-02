@@ -1,5 +1,9 @@
 .navcrtSec {
        flex-direction: column;
+
+       @media (max-width: 767px) {
+              flex-direction: row !important;
+       }
 }
 
 .menulst {
@@ -7,4 +11,17 @@
        color: #000;
        padding-left: 20px !important;
        padding-right: 20px !important;
+}
+
+.navcrtmenu {
+       @media (max-width: 767px) {
+              margin-right: 10%;
+       }
+}
+
+.hname{
+       font-size: 32px;
+       @media (max-width: 767px) {
+              font-size: 24px;
+       }
 }
