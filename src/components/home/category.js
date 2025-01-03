@@ -1,12 +1,13 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Image from "next/image";
+import styles from './home.module.scss'
 
 const category = () => {
     return (
         <Container fluid>
             <Row className='my-5'>
-                <Col style={{ position: 'relative', paddingRight: '1rem', paddingLeft: '1rem' }}>
+                <Col xs={12} md={4} className={styles.ctgrybox}>
                     <div style={{ border: '1px solid #000', zIndex: '1' }}>
                         <div style={{ position: 'absolute', bottom: '1rem', left: '3rem' }}>
                             <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Fresh</h2>
@@ -23,7 +24,7 @@ const category = () => {
                         />
                     </div>
                 </Col>
-                <Col style={{ position: 'relative', paddingRight: '1rem', paddingLeft: '1rem' }}>
+                <Col xs={12} md={4} className={styles.ctgrybox}>
                     <div style={{ border: '1px solid #000', zIndex: '1' }}>
                         <div style={{ position: 'absolute', bottom: '1rem', left: '3rem' }}>
                             <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Woody</h2>
@@ -40,7 +41,7 @@ const category = () => {
                         />
                     </div>
                 </Col>
-                <Col style={{ position: 'relative', paddingRight: '1rem', paddingLeft: '1rem' }}>
+                <Col xs={12} md={4} className={styles.ctgrybox}>
                     <div style={{ border: '1px solid #000', zIndex: '1' }}>
                         <div style={{ position: 'absolute', bottom: '1rem', left: '3rem' }}>
                             <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Floral</h2>

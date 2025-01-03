@@ -1,62 +1,85 @@
 .home-slidebanner {
-    // margin-top: 32px;
+
+  // margin-top: 32px;
+  @media (max-width: 767px) {
+    // margin-top: 23px;
+  }
+
+  .learn-h-sec1 {
+    background: url(../../../public/images/bannermobile.png) no-repeat bottom / cover;
+    padding: 0 0 36% 0;
+    position: relative;
+
+    //margin-top: 50px;
     @media (max-width: 767px) {
-      // margin-top: 23px;
+      background: url(../../../public/images/bannerdesktp.png) no-repeat center / cover;
+      padding: 0 0 136% 0;
+      text-align: left;
     }
-    .learn-h-sec1 {
-      background: url(../../../public/images/bannermobile.png) no-repeat
-        bottom / cover;
-      padding: 0 0 36% 0;
-      position: relative;
-      //margin-top: 50px;
+
+    .btn {
+      position: absolute;
+      left: 33%;
+      top: 73%;
+      width: 13%;
+      height: 11%;
+      font-size: 0;
+
+      // background-color: #08089b;
       @media (max-width: 767px) {
-        background: url(../../../public/images/bannerdesktp.png) no-repeat
-          center / cover;
-        padding: 0 0 136% 0;
-        text-align: left;
-      }
-      .btn {
-        position: absolute;
-        left: 33%;
-        top: 73%;
-        width: 13%;
-        height: 11%;
-        font-size: 0;
-        // background-color: #08089b;
-        @media (max-width: 767px) {
-          left: 39%;
-          top: 31%;
-          width: 22%;
-          height: 5%;
-        }
-      }
-    }
-    .learn-h-sec2 {
-      background: url(../../../public/images/bannermobile.png) no-repeat bottom /
-        cover;
-      padding: 0 0 36% 0;
-      position: relative;
-      //margin-top: 50px;
-      @media (max-width: 767px) {
-        background: url(../../../public/images/bannerdesktp.png) no-repeat
-          center / cover;
-        padding: 0 0 136% 0;
-        text-align: left;
-      }
-      .btn {
-        position: absolute;
-        left: 43%;
-        top: 73%;
-        width: 13%;
-        height: 11%;
-        font-size: 0;
-        // background-color: #08089b;
-        @media (max-width: 767px) {
-          left: 37%;
-          top: 52%;
-          width: 22%;
-          height: 5%;
-        }
+        left: 39%;
+        top: 31%;
+        width: 22%;
+        height: 5%;
       }
     }
   }
+
+  .learn-h-sec2 {
+    background: url(../../../public/images/bannermobile.png) no-repeat bottom / cover;
+    padding: 0 0 36% 0;
+    position: relative;
+
+    //margin-top: 50px;
+    @media (max-width: 767px) {
+      background: url(../../../public/images/bannerdesktp.png) no-repeat center / cover;
+      padding: 0 0 136% 0;
+      text-align: left;
+    }
+
+    .btn {
+      position: absolute;
+      left: 43%;
+      top: 73%;
+      width: 13%;
+      height: 11%;
+      font-size: 0;
+
+      // background-color: #08089b;
+      @media (max-width: 767px) {
+        left: 37%;
+        top: 52%;
+        width: 22%;
+        height: 5%;
+      }
+    }
+  }
+}
+
+
+
+.ctgrybox {
+  position: relative;
+  padding-right: 1rem;
+  padding-left: 1rem;
+
+  @media (max-width: 767px) {
+    margin-bottom: 2rem;
+  }
+}
+
+
+.notesimg {
+  width: auto !important;
+  height: 100% !important;
+}
