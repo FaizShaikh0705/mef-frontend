@@ -81,5 +81,16 @@
 
 .notesimg {
   width: auto !important;
-  height: 100% !important;
+  height: 30% !important;
+
+  @media (max-width: 767px) {
+    height: 30% !important;
+  }
+}
+
+.notescnt {
+  font-size: 13px;
+  @media (max-width: 767px) {
+    font-size: 10px;
+  }
 }

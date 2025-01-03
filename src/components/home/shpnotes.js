@@ -7,9 +7,9 @@ import styles from './home.module.scss'
 const shpnotes = () => {
     return (
         <>
-            <Container>
+            <Container className='my-4'>
                 <Row>
-                    <Col className='text-center'>
+                    <Col xs={6} md={2} className='text-center'>
                         <Image
                             width={121}
                             height={121}
@@ -21,8 +21,9 @@ const shpnotes = () => {
                             className={styles.notesimg}
                         />
                         <h3>Floral</h3>
+                        <p className={styles.notescnt}>Enchanting Floral collection - perfect fragrances for every romantic soul.</p>
                     </Col>
-                   <Col className='text-center'>
+                    <Col xs={6} md={2} className='text-center'>
                         <Image
                             width={121}
                             height={121}
@@ -34,8 +35,10 @@ const shpnotes = () => {
                             className={styles.notesimg}
                         />
                         <h3>Woody</h3>
+                        <p className={styles.notescnt}>Dive into our lit Woody fragrances—bringing those earthy vibes straight to you!
+                        </p>
                     </Col>
-                   <Col className='text-center'>
+                    <Col xs={6} md={2} className='text-center'>
                         <Image
                             width={121}
                             height={121}
@@ -47,8 +50,9 @@ const shpnotes = () => {
                             className={styles.notesimg}
                         />
                         <h3>Fresh</h3>
+                        <p className={styles.notescnt}>Get the ultimate freshness with our Fresh scents—perfect for every mood!</p>
                     </Col>
-                   <Col className='text-center'>
+                    <Col xs={6} md={2} className='text-center'>
                         <Image
                             width={121}
                             height={121}
@@ -60,8 +64,9 @@ const shpnotes = () => {
                             className={styles.notesimg}
                         />
                         <h3>Musky</h3>
+                        <p className={styles.notescnt}>Level up your scent game with our Musky vibes—bold, confident, and absolutely unforgettable!</p>
                     </Col>
-                   <Col className='text-center'>
+                    <Col xs={6} md={2} className='text-center'>
                         <Image
                             width={121}
                             height={121}
@@ -73,8 +78,9 @@ const shpnotes = () => {
                             className={styles.notesimg}
                         />
                         <h3>Gourmand</h3>
+                        <p className={styles.notescnt}>Satisfy your scent cravings—so mouthwatering, you'll want to lick yourself!</p>
                     </Col>
-                   <Col className='text-center'>
+                    <Col xs={6} md={2} className='text-center'>
                         <Image
                             width={121}
                             height={121}
@@ -86,8 +92,8 @@ const shpnotes = () => {
                             className={styles.notesimg}
                         />
                         <h3>Oriental</h3>
+                        <p className={styles.notescnt}>Discover diverse Oriental scents, from sensual East to nature-inspired blends. strong, attractive, and utterly irresistible.</p>
                     </Col>
-
                 </Row>
             </Container>
         </>

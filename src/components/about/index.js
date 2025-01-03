@@ -34,7 +34,7 @@ const index = () => {
                 </div>
               </div>
             </Col>
-            <Col md={5}>
+            <Col className={styles.abtcnt} md={5}>
               <h2 style={{ fontWeight: '300' }}>NATURAL ORGANIC <br />COSMETICS PROMOTES <br />REJUVENATION</h2>
               <p>Bleak cod cutthroat eel sargassum fish panga sucker beardfish lionfish batfish eulachon Raccoon butterfly fish tetra. Pejerrey combtooth blenny Sundaland Noodlefish pipefish zebra shark beaked salmon hillstream loach New Zealand smelt salmon false moray pelican eel stoneroller minnow.</p>
             </Col>

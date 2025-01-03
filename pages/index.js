@@ -24,7 +24,7 @@ const Home = () => {
     // }
     return (
         <>
-            <NextSeo title="MEF" description="MEF" canonical="/" />
+            <NextSeo title="MKM PARFUM" description="MKM PARFUM" canonical="/" />
             {/* <SeoSchema data={schemaData} /> */}
             <HomeContainer />
         </>
