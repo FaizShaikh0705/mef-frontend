@@ -1,53 +1,53 @@
-// pages/home/[slug].js
-// import { NextSeo } from 'next-seo';
-import MasterLayout from '../../src/components/layouts/master';
-// import SeoSchema from '../../src/components/seo/schema';
-import ProductDetailsContainer from '../../src/components/product/productDetails';
-// import { publicRequest } from "../../src/requestMethods";
-// import axios from 'axios';
+// // pages/home/[slug].js
+// // import { NextSeo } from 'next-seo';
+// import MasterLayout from '../../src/components/layouts/master';
+// // import SeoSchema from '../../src/components/seo/schema';
+// import ProductDetailsContainer from '../../src/components/product/productDetails';
+// // import { publicRequest } from "../../src/requestMethods";
+// // import axios from 'axios';
 
-const RelatedProduct = ({ productDetailsData }) => {
-    return (
-        <>
-            <ProductDetailsContainer productDetailsData={productDetailsData} />
-        </>
-    );
-};
-
-// export async function getStaticPaths() {
-//     const res = await publicRequest.get('/products');
-//     const productDetailsData = await res.data;
-//     // console.log("productDetailsData", productDetailsData)
-
-//     const slugs = Object.keys(productDetailsData).map((key) =>
-//         productDetailsData[key].sluginput.toLowerCase().split(' ').join('-')
+// const RelatedProduct = ({ productDetailsData }) => {
+//     return (
+//         <>
+//             <ProductDetailsContainer productDetailsData={productDetailsData} />
+//         </>
 //     );
+// };
 
-//     const paths = slugs.map((slug) => ({
-//         params: { slug },
-//     }));
+// // export async function getStaticPaths() {
+// //     const res = await publicRequest.get('/products');
+// //     const productDetailsData = await res.data;
+// //     // console.log("productDetailsData", productDetailsData)
 
-//     return {
-//         paths,
-//         fallback: false,
-//     };
-// }
+// //     const slugs = Object.keys(productDetailsData).map((key) =>
+// //         productDetailsData[key].sluginput.toLowerCase().split(' ').join('-')
+// //     );
 
-// export async function getStaticProps({ params }) {
-//     const { slug } = params;
-//     const res = await publicRequest.get('/products');
-//     const productDetailsData = await res.data;
-//     // console.log("productDetailsData", productDetailsData)
+// //     const paths = slugs.map((slug) => ({
+// //         params: { slug },
+// //     }));
 
-//     const key = Object.keys(productDetailsData).find(
-//         (key) => productDetailsData[key].sluginput.toLowerCase().split(' ').join('-') === slug
-//     );
+// //     return {
+// //         paths,
+// //         fallback: false,
+// //     };
+// // }
 
-//     return {
-//         props: {
-//             productDetailsData: productDetailsData[key],
-//         },
-//     };
-// }
+// // export async function getStaticProps({ params }) {
+// //     const { slug } = params;
+// //     const res = await publicRequest.get('/products');
+// //     const productDetailsData = await res.data;
+// //     // console.log("productDetailsData", productDetailsData)
 
-export default RelatedProduct;
+// //     const key = Object.keys(productDetailsData).find(
+// //         (key) => productDetailsData[key].sluginput.toLowerCase().split(' ').join('-') === slug
+// //     );
+
+// //     return {
+// //         props: {
+// //             productDetailsData: productDetailsData[key],
+// //         },
+// //     };
+// // }
+
+// export default RelatedProduct;
