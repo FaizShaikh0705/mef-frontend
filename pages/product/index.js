@@ -1,7 +1,7 @@
 import { NextSeo } from 'next-seo';
 import ProductContainer from "../../src/components/product";
 // import axios from 'axios';
-// import { publicRequest } from "../../src/requestMethods";
+import { publicRequest } from "../../src/requestMethods";
 
 const Product = () => {
     return (
@@ -22,13 +22,13 @@ export default Product;
 //     });
 // };
 
-// export async function getStaticProps() {
-//     const res = await publicRequest.get("/products");
-//     const productData = res.data;
+export async function getStaticProps() {
+    const res = await publicRequest.get("/products");
+    const productData = res.data;
 
-//     return {
-//         props: {
-//             productData,
-//         }
-//     }
-// }
+    return {
+        props: {
+            productData,
+        }
+    }
+}
