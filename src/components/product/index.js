@@ -4,7 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { FaStar } from "react-icons/fa";
-const index = () => {
+const Product = () => {
   return (
     <>
       <section className={styles.dlftbnnr}>
@@ -220,4 +220,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Product

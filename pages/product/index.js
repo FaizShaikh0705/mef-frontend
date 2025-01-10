@@ -1,12 +1,31 @@
 import { NextSeo } from 'next-seo';
 import ProductContainer from "../../src/components/product";
-// import axios from 'axios';
-import { publicRequest } from "../../src/requestMethods";
+import axios from 'axios';
+import {publicRequest} from "../../src/requestMethods";
 
-const Product = () => {
+const Product = ({ productData }) => {
+
+    let schemaData = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "qirah",
+        "url": "https://www.qirah-haircare.com",
+        "logo": "https://admin.thewholetruthfoods.com/wp/wp-content/uploads/2021/01/logo-top.svg",
+        "founder": "jitu karsan",
+        "foundingDate": "2009",
+        "foundingLocation": "Mumbai",
+        "sameAs": [
+            "https://www.facebook.com/",
+            "https://twitter.com/",
+            "https://www.instagram.com/",
+            "https://www.youtube.com/channel/"
+        ]
+    }
     return (
         <>
-            <ProductContainer />
+            {/* <NextSeo title="Qirah" description="Hair Growth and Hair fall control Qirah oil" canonical="/product" /> */}
+            {/* <SeoSchema data={schemaData} /> */}
+            <ProductContainer productData={productData} />
         </>
     )
 }

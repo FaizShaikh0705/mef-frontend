@@ -71,9 +71,9 @@ const index = ({ blogData: initialBlogData }) => {
                                     />
                                     <Card.Body>
                                         <Card.Title>{parse(`${item[1].postTopicName.substring(0, 50)}...`)}</Card.Title>
-                                        <Card.Text style={{ height: '250px' }}>
+                                        <div style={{ height: '250px' }}>
                                             {parse(`${item[1].postLongDetail.substring(0, 100)}...`)}
-                                        </Card.Text>
+                                        </div>
                                         <Link href={`/blog/${(item[1].sluginput).toLowerCase().split(" ").join("-")}`}>
                                             <Button variant="dark">Read More</Button>
                                         </Link>

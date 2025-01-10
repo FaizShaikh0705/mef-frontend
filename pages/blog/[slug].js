@@ -1,16 +1,20 @@
 // pages/blog/[slug].js
-// import { NextSeo } from 'next-seo';
+import { NextSeo } from 'next-seo';
 import MasterLayout from '../../src/components/layouts/master';
-// import SeoSchema from '../../src/components/seo/schema';
+import SeoSchema from '../../src/components/seo/schema';
 import BlogDetailsContainer from '../../src/components/blog/blogDetails';
-// import axios from 'axios';
+import axios from 'axios';
 import { publicRequest } from "../../src/requestMethods";
 
 const RelatedBlog = ({ blogDetailsData }) => {
-
+    let schemaData = {
+        // ... your schema data
+    };
 
     return (
         <>
+            {/* <NextSeo title="Qirah" description="Hair Growth and Hair fall control Qirah oil" canonical="/blog" /> */}
+            {/* <SeoSchema data={schemaData} /> */}
             <BlogDetailsContainer blogDetailsData={blogDetailsData} />
         </>
     );

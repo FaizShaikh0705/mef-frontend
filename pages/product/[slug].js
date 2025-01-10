@@ -1,14 +1,19 @@
 // pages/home/[slug].js
-// import { NextSeo } from 'next-seo';
+import { NextSeo } from 'next-seo';
+import React, { useEffect, useState } from "react";
 import MasterLayout from '../../src/components/layouts/master';
-// import SeoSchema from '../../src/components/seo/schema';
+import SeoSchema from '../../src/components/seo/schema';
 import ProductDetailsContainer from '../../src/components/product/productDetails';
 import { publicRequest } from "../../src/requestMethods";
-// import axios from 'axios';
+import axios from 'axios';
 
 const RelatedProduct = ({ productDetailsData }) => {
+    // console.log("productDetailsData", productDetailsData)
+
     return (
         <>
+            {/* <NextSeo title="Qirah" description="Hair Growth and Hair fall control Qirah oil" canonical="/product" /> */}
+            {/* <SeoSchema data={schemaData} /> */}
             <ProductDetailsContainer productDetailsData={productDetailsData} />
         </>
     );
