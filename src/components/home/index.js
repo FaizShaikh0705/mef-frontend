@@ -2,17 +2,17 @@ import React from "react";
 import HomeBanner from "./banner";
 import HommeIntro from './intro';
 import HomeCategory from './category';
-import HommeArrivals from './Arrivals';
+import Product from '../product'
 import HommeBannerGrid from './bannerGrid';
 import HommeShpNotes from './shpnotes';
 
-const Home = () => {
+const Home = ({ productData }) => {
     return (
         <>
             <HomeBanner />
             <HommeIntro />
             <HomeCategory />
-            <HommeArrivals />
+            <Product productData={productData} />
             <HommeShpNotes />
             <HommeBannerGrid />
         </>

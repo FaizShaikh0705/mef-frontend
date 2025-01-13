@@ -8,7 +8,7 @@ import parse from "html-react-parser";
 import Image from "next/image";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import ProductTestimony from "./productTestimony";
+// import ProductTestimony from "./productTestimony";
 import Accordion from "react-bootstrap/Accordion";
 import { VscAccount } from "react-icons/vsc";
 import { SlCalender } from "react-icons/sl";
@@ -31,10 +31,10 @@ import axios from "axios";
 import { FaStar } from "react-icons/fa";
 import Slider from "react-slick";
 import { publicRequest } from "../../requestMethods";
-import { addProduct } from "../../redux/cartRedux";
-import { useDispatch } from "react-redux";
-import { useSelector } from "react-redux";
-import * as fbq from '../../../lib/fpixel';
+// import { addProduct } from "../../redux/cartRedux";
+// import { useDispatch } from "react-redux";
+// import { useSelector } from "react-redux";
+// import * as fbq from '../../../lib/fpixel';
 
 
 var $ = require("jquery");
@@ -59,7 +59,7 @@ const ProductDetailsContainer = ({
     const handleShow = () => setShow(true);
 
     const [product, setProduct] = useState({});
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
 
     const router = useRouter();
     const { productId } = 0;
@@ -164,7 +164,7 @@ const ProductDetailsContainer = ({
         // // item["quantity"] = 1;
         // console.log(item);
         // // console.log(selectedVariants[key]);
-        dispatch(addProduct(item));
+        // dispatch(addProduct(item));
         setShowProduct(true);
         // dispatch(addProduct({
         //   product,
@@ -174,12 +174,12 @@ const ProductDetailsContainer = ({
         // }))
 
 
-        fbq.addToCart(initialProductDetailsData._id, initialProductDetailsData.postPriceName);
+        // fbq.addToCart(initialProductDetailsData._id, initialProductDetailsData.postPriceName);
         // Perform add to cart logic here (Redux, API call, etc.)
 
     };
 
-    const user = useSelector((state) => state.user);
+    // const user = useSelector((state) => state.user);
 
     const handleFormSubmit = async (values, actions) => {
         try {
@@ -416,7 +416,7 @@ const ProductDetailsContainer = ({
                                     Review
                                 </Button>
                                 <Button variant="outline-dark" onClick={handleShow}>Write a Review</Button>
-                                <ProductTestimony />
+                                {/* <ProductTestimony /> */}
                                 <Modal show={show} centered onHide={handleClose}>
                                     <Modal.Header closeButton>
                                         <Modal.Title>Write a Review</Modal.Title>
