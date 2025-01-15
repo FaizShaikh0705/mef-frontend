@@ -17,7 +17,7 @@ const Home = ({ productData }) => {
       {/* <Offer /> */}
       <Ingredient />
       <Benfits />
-      <Testimony />
+      {/* <Testimony /> */}
       <Reel />
     </>
   );

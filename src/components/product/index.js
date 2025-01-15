@@ -46,19 +46,19 @@ const Product = ({ productData: initialProductData }) => {
     };
 
 
-    const getCombo = async () => {
-      try {
-        const res = await publicRequest.get("/combo");
-        setComboProduct(res.data);
-        console.log("combo data", res.data);
-      } catch (error) {
-        console.error("Error fetching comboproducts:", error);
-        // Handle error as needed, e.g., set an error state
-      }
-    };
+    // const getCombo = async () => {
+    //   try {
+    //     const res = await publicRequest.get("/combo");
+    //     setComboProduct(res.data);
+    //     console.log("combo data", res.data);
+    //   } catch (error) {
+    //     console.error("Error fetching comboproducts:", error);
+    //     // Handle error as needed, e.g., set an error state
+    //   }
+    // };
 
     getProduct();
-    getCombo();
+    // getCombo();
   }, []);
 
   // useEffect(() => {
