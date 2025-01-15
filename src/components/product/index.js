@@ -114,8 +114,8 @@ const Product = ({ productData: initialProductData }) => {
     <section className={`${styles["products-main"]} py-4`} id="shop">
       <Container>
         <Row className=" text-center">
-          <h3 style={{ color: "#D7B56D" }} className="">Our Popular Products</h3>
-          <h2 style={{ color: "#D7B56D" }} className="mb-4">Best Sellers</h2>
+          <h3 style={{ color: "#706C61" }} className="">Our Popular Products</h3>
+          <h2 style={{ color: "#706C61" }} className="mb-4">Best Sellers</h2>
           {product &&
             Object.entries(product)
               // .filter(([key, item]) => item.postIsActiveStatus === "1" && item.category === "Hair Oil")
@@ -139,7 +139,7 @@ const Product = ({ productData: initialProductData }) => {
                           variant="top"
                           alt="firstImage"
                           src={firstImage}
-                          className="mt-1"
+                          // className="mt-1"
                         />
                       </Link>
                       <Card.Body className="justify-content-center">

@@ -80,23 +80,23 @@ const Footer = () => {
             </div>
             <div className="col-lg-3">
               <h3 className="mb-4">Contact Details</h3>
-              <Link href='tel:+918104583429'>
+              <Link href='tel:+919321406215'>
               <p className="mb-3">
                 <strong>
                   <span style={{ color: "#706C61" }}>
                     <FaPhone />
                   </span>
-                  &nbsp; +91 8104583429
+                  &nbsp; +91 9321406215
                 </strong>
               </p>
               </Link>
-              <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=info@qirah-haircare.com.in&su=SUBJECT&body=BODY" target="blank">
+              <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=info@mkmparfum.com.in&su=SUBJECT&body=BODY" target="blank">
               <p className="mb-3">
                 <strong>
                   <span style={{ color: "#706C61" }}>
                     <IoMail />
                   </span>
-                  &nbsp; info@qirah-haircare.com
+                  &nbsp; info@mkmparfum.com
                 </strong>
               </p>
               </Link>
@@ -106,7 +106,7 @@ const Footer = () => {
                   <span style={{ color: "#706C61" }}>
                     <FaSquareInstagram />
                   </span>
-                  &nbsp; qirah_oil
+                  &nbsp; mkmparfum
                 </strong>
               </p>
               </Link>
@@ -166,7 +166,7 @@ const Footer = () => {
                   />
                 </li> */}
               </ul>
-              <p>
+              {/* <p>
                 <strong>
                   <span style={{ color: "#706C61" }}>
                     <FaLocationDot />
@@ -176,7 +176,7 @@ const Footer = () => {
               </p>
               <p>
               Heena Style Affairs, AR 26, A Wing, Nootan Nagar CHS, Near Bandra Station, Opp. Sahakari Bhandar, Bandra west, Mumbai 400050
-              </p>
+              </p> */}
             </div>
           </Row>
         </Container>

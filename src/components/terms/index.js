@@ -407,7 +407,7 @@ const Index = () => {
               <h5>SECTION 20 - CONTACT INFORMATION</h5>
               <p>
                 Questions about the Terms of Service should be sent to us at
-                info@qirah-haircare.com
+                info@mkmparfum.com
               </p>
             </Col>
           </Row>

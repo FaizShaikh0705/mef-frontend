@@ -3,24 +3,24 @@
     @media(max-width: 767px){
         margin-top: 23px;
     }
-    background-image: url(../../../public/images/productbanner.jpg);
+    background-color: #E1F4F3;
     background-repeat: no-repeat;
     background-size: cover;
     .content {
         padding: 80px 0px;
-        color: #d7b56d;
+        color: #706C61;
         text-align: center;
     }
 }
 .contact-body{
     // margin: 80px 0px;
     ::placeholder{
-        color: #d7b56d;
+        color: #706C61;
         font-family: 'Montserrat', sans-serif !important;
     }
     .box-form{
-        background-color: #000;
-        border: 3px solid #d7b56d;
+        background-color: #E1F4F3;
+        border: 3px solid #706C61;
     }
     a{
         text-decoration: none;
