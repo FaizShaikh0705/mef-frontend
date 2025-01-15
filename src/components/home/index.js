@@ -1,22 +1,26 @@
 import React from "react";
-import HomeBanner from "./banner";
-import HommeIntro from './intro';
-import HomeCategory from './category';
+import HomeBanner from './banner'
+import Intro from './intro'
 import Product from '../product'
-import HommeBannerGrid from './bannerGrid';
-import HommeShpNotes from './shpnotes';
+import Offer from './offer'
+import Ingredient from "./ingredient";
+import Benfits from "./benfits";
+import Testimony from "./testimony";
+import Reel from './reel';
 
 const Home = ({ productData }) => {
-    return (
-        <>
-            <HomeBanner />
-            <HommeIntro />
-            <HomeCategory />
-            <Product productData={productData} />
-            <HommeShpNotes />
-            <HommeBannerGrid />
-        </>
-    );
+  return (
+    <>
+      <HomeBanner />
+      <Intro />
+      <Product productData={productData} />
+      {/* <Offer /> */}
+      <Ingredient />
+      <Benfits />
+      <Testimony />
+      <Reel />
+    </>
+  );
 };
 
 export default Home;

@@ -13,7 +13,7 @@ const RelatedBlog = ({ blogDetailsData }) => {
 
     return (
         <>
-            {/* <NextSeo title="Qirah" description="Hair Growth and Hair fall control Qirah oil" canonical="/blog" /> */}
+            <NextSeo title="MKM PARFUM" description="MKM PARFUM" canonical="/blog" />
             {/* <SeoSchema data={schemaData} /> */}
             <BlogDetailsContainer blogDetailsData={blogDetailsData} />
         </>

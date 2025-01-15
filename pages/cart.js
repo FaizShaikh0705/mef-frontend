@@ -4,32 +4,31 @@ import SeoSchema from "../src/components/seo/schema";
 import CartContainer from "../src/components/cart";
 import axios from 'axios';
 
-const cart = () => {
-
-    // let schemaData = {
-    //     "@context": "https://schema.org",
-    //     "@type": "Organization",
-    //     "name": "qirah",
-    //     "url": "https://www.qirah-haircare.com",
-    //     "logo": "https://admin.thewholetruthfoods.com/wp/wp-content/uploads/2021/01/logo-top.svg",
-    //     "founder": "jitu karsan",
-    //     "foundingDate": "2009",
-    //     "foundingLocation": "Mumbai",
-    //     "sameAs": [
-    //         "https://www.facebook.com/",
-    //         "https://twitter.com/",
-    //         "https://www.instagram.com/",
-    //         "https://www.youtube.com/channel/"
-    //     ]
-    // }
+const Cart = (productData) => {
+    let schemaData = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "qirah",
+        "url": "https://www.qirah-haircare.com",
+        "logo": "https://admin.thewholetruthfoods.com/wp/wp-content/uploads/2021/01/logo-top.svg",
+        "founder": "jitu karsan",
+        "foundingDate": "2009",
+        "foundingLocation": "Mumbai",
+        "sameAs": [
+            "https://www.facebook.com/",
+            "https://twitter.com/",
+            "https://www.instagram.com/",
+            "https://www.youtube.com/channel/"
+        ]
+    }
     return (
         <>
-            <NextSeo title="MEF" description="MEF" canonical="/" />
+            <NextSeo title="MKM PARFUM" description="MKM PARFUM" canonical="/blog" />
             {/* <SeoSchema data={schemaData} /> */}
-            <CartContainer />
+            <CartContainer productData={productData} />
         </>
     )
 }
-export default cart;
 
+export default Cart
 

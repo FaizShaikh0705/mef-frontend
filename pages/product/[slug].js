@@ -5,14 +5,24 @@ import MasterLayout from '../../src/components/layouts/master';
 import SeoSchema from '../../src/components/seo/schema';
 import ProductDetailsContainer from '../../src/components/product/productDetails';
 import { publicRequest } from "../../src/requestMethods";
+import * as fbq from '../../lib/fpixel';
 import axios from 'axios';
 
 const RelatedProduct = ({ productDetailsData }) => {
     // console.log("productDetailsData", productDetailsData)
 
+    useEffect(() => {
+        let viewContentFired = false;
+
+        if (!viewContentFired && productDetailsData) {
+            fbq.viewContent(productDetailsData._id, productDetailsData.postTopicName, productDetailsData.category, productDetailsData.postPriceName,);
+            viewContentFired = true; // Prevent multiple calls
+        }
+    }, [productDetailsData]);
+
     return (
         <>
-            {/* <NextSeo title="Qirah" description="Hair Growth and Hair fall control Qirah oil" canonical="/product" /> */}
+            <NextSeo title="MKM PARFUM" description="MKM PARFUM" canonical="/product" />
             {/* <SeoSchema data={schemaData} /> */}
             <ProductDetailsContainer productDetailsData={productDetailsData} />
         </>

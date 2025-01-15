@@ -1,7 +1,7 @@
 import { NextSeo } from 'next-seo';
 import ProductContainer from "../../src/components/product";
 import axios from 'axios';
-import {publicRequest} from "../../src/requestMethods";
+import { publicRequest } from "../../src/requestMethods";
 
 const Product = ({ productData }) => {
 
@@ -23,7 +23,7 @@ const Product = ({ productData }) => {
     }
     return (
         <>
-            {/* <NextSeo title="Qirah" description="Hair Growth and Hair fall control Qirah oil" canonical="/product" /> */}
+            <NextSeo title="MKM PARFUM" description="MKM PARFUM" canonical="/product" />
             {/* <SeoSchema data={schemaData} /> */}
             <ProductContainer productData={productData} />
         </>

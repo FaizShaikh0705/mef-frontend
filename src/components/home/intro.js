@@ -1,19 +1,62 @@
-import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import styles from "./home.module.scss";
+import Link from "next/link";
+import Image from "next/image";
+import Button from "react-bootstrap/Button";
 
 const intro = () => {
-    return (
-        <Container className='my-5'>
-            <Row className='text-center my-5'>
-                <Col>
-                    <h1>MKM Parfum - A Symphony of Fragrance</h1>
-                    <p style={{ marginTop: '2rem' }}>
-                        Indulge in the enchanting world of perfumes with House of EM5, the best perfume brand in India. Whether you seek a captivating perfume for men or a mesmerizing fragrance for women, our curated collection has something for everyone. Experience the allure of our perfume sprays, solid perfumes, body mists, scented candles, roll-ons, reed diffusers, perfumed crème, and beard balms. Buy perfume online and immerse yourself in a sensory journey that reflects your unique style and personality. Elevate every moment with the magic of House of EM5!
-                    </p>
-                </Col>
-            </Row>
-        </Container>
-    )
-}
+  return (
+    <section className={`${styles["intro-main"]} my-4`} id="about">
+      <Container>
+        <Row>
+          <Col lg={6}>
+            <h2>Use It To Believe It</h2>
+              <h3>Introducing Qirah Hair Oil:</h3>
+              <br/>
+            <p>
+              QiRah Hair Care is a brand by Heena Style Affairs,
+              a pioneering company dedicated to crafting natural hair products
+              that empower customers in their journey to combat various hair problems.
+              Our formulations are meticulously designed to harness the power of nature,
+              providing effective solutions for healthier, more vibrant hair. At QiRah,
+              we believe in the beauty of natural ingredients and the transformative impact
+              they can have on your hair. Join us in embracing a holistic approach to hair
+              care and rediscover the confidence that comes with nourished, revitalized locks.
+              <br />
+              <br />
+              Heena Style Affairs our company started its journey in 2014
+              with its clothing line and then established it's other brands
+              Zabacc and Qirah. We believe in delivering quality products to our
+              customers and help them solve their problems, be it self hygiene or
+              hair loss, we fix it all. We acknowledge ourselves as a fast
+              growing company that will add value to customers life.
+            </p>
+            <br/>
+            <Button
+              // style={{ marginBottom: "30px" }}
+              className={styles["newsbtn"]}
+              href="/aboutus"
+              variant="outline-dark"
+              id="button-addon2"
+            >
+              Know More
+            </Button>
+          </Col>
+          <Col className="offset-lg-1" lg={5}>
+            <Image
+              className={styles["intro-image"]}
+              height="380"
+              width="450"
+              objectFit="contain"
+              src="/images/displayimagemain.jpg"
+              alt="logo_img"
+            />
+          </Col>
+        </Row>
+      </Container>
+    </section>
+  );
+};
 
-export default intro
+export default intro;

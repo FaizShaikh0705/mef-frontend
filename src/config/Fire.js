@@ -5,14 +5,14 @@ require("firebase/storage")
 
 const config = {
 
-    apiKey: "AIzaSyACXPvO2MqWYsvJQbqqj4A5FmYjOuGlyuY",
-    authDomain: "daniyal-perfume.firebaseapp.com",
-    databaseURL: "https://daniyal-perfume-default-rtdb.firebaseio.com",
-    projectId: "daniyal-perfume",
-    storageBucket: "daniyal-perfume.firebasestorage.app",
-    messagingSenderId: "7642518769",
-    appId: "1:7642518769:web:5d897fb78677c4ea354550",
-    measurementId: "G-SBSE60CJ0X"
+  apiKey: "AIzaSyAFNx60JgSx_4ZW2IeIZ5WnMXcMc-SsIUY",
+  authDomain: "qirah-dashboard.firebaseapp.com",
+  databaseURL: "https://qirah-dashboard-default-rtdb.firebaseio.com",
+  projectId: "qirah-dashboard",
+  storageBucket: "qirah-dashboard.appspot.com",
+  messagingSenderId: "769306784594",
+  appId: "1:769306784594:web:758647bca6d46db1ca808b",
+  measurementId: "G-LFXRG8NZDD"
 
 };
 
