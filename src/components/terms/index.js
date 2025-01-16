@@ -331,7 +331,7 @@ const Index = () => {
               </p>
               <h5>SECTION 14 - INDEMNIFICATION</h5>
               <p>
-                You agree to indemnify, defend and hold harmless Qirah Hair Oil
+                You agree to indemnify, defend and hold harmless MKM Parfum
                 and our parent, subsidiaries, affiliates, partners, officers,
                 directors, agents, contractors, licensors, service providers,
                 subcontractors, suppliers, interns and employees, harmless from

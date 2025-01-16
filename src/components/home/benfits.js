@@ -9,7 +9,7 @@ const Benfits = () => {
         <Container>
             <Row>
                 <Col lg={12}>
-                    <h2 className='text-center mb-4'>Benefits Of Qirah Hair Oil</h2>
+                    <h2 className='text-center mb-4'>Benefits Of MKM Parfum</h2>
                 </Col>
                 <Col lg={6}>
                 <Image

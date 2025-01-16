@@ -152,7 +152,7 @@ const Contact = () => {
               <p className='mt-3'><strong><span style={{ color: '#706C61' }}><IoMail /></span>&nbsp; Email address</strong></p>
               <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=info@mkmparfum.com.in&su=SUBJECT&body=BODY" target="blank"><p>info@mkmparfum.com</p></Link>
               <p className='mt-3'><strong><span style={{ color: '#706C61' }}><FaSquareInstagram /></span>&nbsp; Instagram ID</strong></p>
-              <Link href='https://www.instagram.com/qirah_oil?igsh=MWthamJtb2JscGNldA%3D%3D&utm_source=qr ' target="blank"><p>qirah_oil</p></Link>
+              <Link href='https://www.instagram.com/qirah_oil?igsh=MWthamJtb2JscGNldA%3D%3D&utm_source=qr ' target="blank"><p>mkmparfum</p></Link>
 
             </Col>
           </Row>

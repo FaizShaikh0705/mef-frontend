@@ -12,7 +12,7 @@ const intro = () => {
         <Row>
           <Col lg={6}>
             <h2>Use It To Believe It</h2>
-              <h3>Introducing Qirah Hair Oil:</h3>
+              <h3>Introducing MKM Parfum:</h3>
               <br/>
             <p>
               QiRah Hair Care is a brand by Heena Style Affairs,

@@ -300,7 +300,7 @@ const ProductDetailsContainer = ({
                   {/* <h3 className="">{`${postTopicName} (${selectedVariants[productId]?.variantName || postVariantName1
                     })`}</h3> */}
                   <div className="mt-2 d-flex">
-                    <span className="me-2">Trusted by Medical Professionals</span>
+                    <span className="me-2">Trusted by Many Customers</span>
                     <span style={{ color: "#d7b56d" }}>
                       <FaStar className="me-2" /><FaStar className="me-2" /><FaStar className="me-2" /><FaStar className="me-2" />
                     </span>
@@ -390,15 +390,15 @@ const ProductDetailsContainer = ({
                 :
                 <div>
                   <h2 className="text-start" style={{ marginTop: "40px" }}>
-                    QiRah Neem Comb Benefits
+                    MKM Parfum Benefits
                   </h2>
                   <ul>
                     <div>
-                      <li>Stimulates scalp for enhanced hair growth.</li>
-                      <li>Naturally antibacterial and antifungal properties.</li>
-                      <li>Gently detangles and smooths hair.</li>
-                      <li>Sustainable and eco-friendly hair care tool.</li>
-                      <li>Promotes healthier, stronger hair with regular use.</li>
+                      <li>lorem lorem lorem lorem lorem lorem lorem lorem.</li>
+                      <li>lorem lorem lorem lorem lorem lorem lorem lorem.</li>
+                      <li>lorem lorem lorem lorem lorem lorem lorem lorem.</li>
+                      <li>lorem lorem lorem lorem lorem lorem lorem lorem.</li>
+                      <li>lorem lorem lorem lorem lorem lorem lorem lorem.</li>
                     </div>
                   </ul>
                 </div>
@@ -545,74 +545,74 @@ const ProductDetailsContainer = ({
                     <Accordion>
                       <Accordion.Item eventKey="0">
                         <Accordion.Header>
-                          QiRah hair oil help in controlling hair fall?
+                          Lorem lorem lorem lorem lorem lorem lorem lorem?
                         </Accordion.Header>
                         <Accordion.Body>
-                          Yes, QiRah helps in controlling hair fall.
+                          MKM, lorem lorem lorem lorem lorem lorem lorem lorem
                         </Accordion.Body>
                       </Accordion.Item>
                       <Accordion.Item eventKey="1">
                         <Accordion.Header>
-                          Does QiRah hair oil help in regrowth and hair growth?
+                          Lorem lorem lorem lorem lorem lorem lorem lorem?
                         </Accordion.Header>
                         <Accordion.Body>
-                          Yes QiRah hair oil, QiRah hair oil does help in regrowth and hair growth
+                          MKM, lorem lorem lorem lorem lorem lorem lorem lorem
                         </Accordion.Body>
                       </Accordion.Item>
                       <Accordion.Item eventKey="2">
                         <Accordion.Header>
-                          which shampoo should we use with QiRah oil?
+                          Lorem lorem lorem lorem lorem lorem lorem lorem?
                         </Accordion.Header>
                         <Accordion.Body>
-                          Any sulphate free shampoo
+                          MKM, lorem lorem lorem lorem lorem lorem lorem lorem
                         </Accordion.Body>
                       </Accordion.Item>
                       <Accordion.Item eventKey="3">
                         <Accordion.Header>
-                          How many times should we apply QiRah hair oil?
+                          Lorem lorem lorem lorem lorem lorem lorem lorem?
                         </Accordion.Header>
                         <Accordion.Body>
-                          At least four times a week
+                          MKM, lorem lorem lorem lorem lorem lorem lorem lorem
                         </Accordion.Body>
                       </Accordion.Item>
                       <Accordion.Item eventKey="4">
                         <Accordion.Header>
-                          Is QiRah hair oil natural?
+                          Lorem lorem lorem lorem lorem lorem lorem lorem?
                         </Accordion.Header>
                         <Accordion.Body>
-                          Yes, QiRah hair oil is made up of natural ingredients
+                          MKM, lorem lorem lorem lorem lorem lorem lorem lorem
                         </Accordion.Body>
                       </Accordion.Item>
                       <Accordion.Item eventKey="5">
                         <Accordion.Header>
-                          Who all can use QiRah hair oil?
+                          Lorem lorem lorem lorem lorem lorem lorem lorem?
                         </Accordion.Header>
                         <Accordion.Body>
-                          QiRah can be used by everyone, men, women and kids also
+                          MKM, lorem lorem lorem lorem lorem lorem lorem lorem
                         </Accordion.Body>
                       </Accordion.Item>
                       <Accordion.Item eventKey="6">
                         <Accordion.Header>
-                          Is QiRah oil, a medicinal oil?
+                          Lorem lorem lorem lorem lorem lorem lorem lorem?
                         </Accordion.Header>
                         <Accordion.Body>
-                          No, it is a hair oil which can be used regularly
+                          MKM, lorem lorem lorem lorem lorem lorem lorem lorem
                         </Accordion.Body>
                       </Accordion.Item>
                       <Accordion.Item eventKey="7">
                         <Accordion.Header>
-                          Does QiRah hair oil have any side-effects?
+                          Lorem lorem lorem lorem lorem lorem lorem lorem?
                         </Accordion.Header>
                         <Accordion.Body>
-                          No, it is absolutely safe.
+                          MKM, lorem lorem lorem lorem lorem lorem lorem lorem
                         </Accordion.Body>
                       </Accordion.Item>
                       <Accordion.Item eventKey="8">
                         <Accordion.Header>
-                          How to apply QiRah hair oil
+                          Lorem lorem lorem lorem lorem lorem lorem lorem?
                         </Accordion.Header>
                         <Accordion.Body>
-                          QiRah, hair oil should be applied like any other normal oil application
+                          MKM, lorem lorem lorem lorem lorem lorem lorem lorem
                         </Accordion.Body>
                       </Accordion.Item>
                     </Accordion>
@@ -621,32 +621,32 @@ const ProductDetailsContainer = ({
                 :
                 <>
                   <div className="text-center mt-5">
-                    <h2>QiRah Neem Comb FAQ’s</h2>
+                    <h2>FAQ’s</h2>
                   </div>
                   <div className="mt-4">
                     <Accordion>
                       <Accordion.Item eventKey="0">
                         <Accordion.Header>
-                          How should I use the QiRah neem comb ?
+                          Lorem lorem lorem lorem lorem lorem lorem lorem?
                         </Accordion.Header>
                         <Accordion.Body>
-                          To maximize its benefits, use the QiRah neem comb after applying QiRah Hair Oil. Gently comb through your hair to distribute the oil evenly and promote better absorption.
+                          Yes, lorem lorem lorem lorem, lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem.
                         </Accordion.Body>
                       </Accordion.Item>
                       <Accordion.Item eventKey="1">
                         <Accordion.Header>
-                          Can I wash my QiRah neem comb ?
+                          Lorem lorem lorem lorem lorem lorem lorem lorem?
                         </Accordion.Header>
                         <Accordion.Body>
-                          Absolutely! To keep your neem comb clean and hygienic, create a mixture with warm water and a mild soap. Remove any stuck hair from the comb, then soak it in the mixture for approximately 2 minutes. It's important not to leave your neem wood comb submerged in water for more than 2 minutes to prevent swelling.
+                          Yes, lorem lorem lorem lorem, lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem.
                         </Accordion.Body>
                       </Accordion.Item>
                       <Accordion.Item eventKey="2">
                         <Accordion.Header>
-                          Does using the QiRah neem comb promote hair growth ?
+                          Lorem lorem lorem lorem lorem lorem lorem lorem?
                         </Accordion.Header>
                         <Accordion.Body>
-                          Yes, indeed! The QiRah neem comb, crafted with precision and care, works in harmony with QiRah Hair Oil to stimulate the scalp, improve blood circulation, and promote healthy hair growth. Incorporating this natural tool into your hair care routine can help you achieve stronger, fuller locks over time.
+                          Yes, lorem lorem lorem lorem, lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem.
                         </Accordion.Body>
                       </Accordion.Item>
                     </Accordion>

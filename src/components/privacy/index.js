@@ -28,7 +28,7 @@ const Index = () => {
             <Col lg={12}>
               <h3 className="text-center my-5">PRIVACY POLICY</h3>
               <p>
-                This privacy statement describes how Qirah Hair Oil collects and
+                This privacy statement describes how MKM Parfum collects and
                 uses the personal information you provide on our Web site:
                 www.qirah-haircare.com It also describes the choices available to you
                 regarding our use of your personal information and how you can
