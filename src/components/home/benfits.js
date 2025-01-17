@@ -5,64 +5,95 @@ import styles from './home.module.scss';
 const Benfits = () => {
   return (
     <>
-      <section className={`${styles['benfits']} py-4`}>
-        <Container>
-            <Row>
-                <Col lg={12}>
-                    <h2 className='text-center mb-4'>Benefits Of MKM Parfum</h2>
-                </Col>
-                <Col lg={6}>
-                <Image
-              className={`${styles["intro-image"]} `}
-              height="380"
-              width="450"
-              objectFit="contain"
-              src="/images/displayimagemain.jpg"
-              alt="logo_img"
+      <Container className='my-4'>
+        <Row>
+          <Col xs={6} md={2} className='text-center'>
+            <Image
+              width={121}
+              height={121}
+              variant="top"
+              src="/images/Floral.avif"
+              objectFit='contain'
+              layout='responsive'
+              alt='product'
+              className={styles.notesimg}
             />
-                </Col>
-                <Col lg={6}>
-                    {/* <div className=''>
-                    <ul>
-                        <li>Rapid Hair Fall Control</li>
-                        <li>Helps in Hair Growth</li>
-                        <li>Increases Hair Length</li>
-                        <li>Increases Hair Volume</li>
-                        <li>Makes Hair Shiny and Smooth</li>
-                        <li>Reduces Dandruff</li>
-                        <li>strengthenes Scalp</li>
-                        <li>Smells Good</li>
-                    </ul>
-                    </div> */}
-                    <div className={`${styles['ben-list']} box rounded-3 p-3 `}>
-                      <p>Rapid Hair Fall Control</p>
-                    </div>
-                    <div className={`${styles['ben-list']} box rounded-3 p-3 `}>
-                      <p>Helps in Hair Growth</p>
-                    </div>
-                    <div className={`${styles['ben-list']} box rounded-3 p-3 `}>
-                      <p>Increases Hair Length</p>
-                    </div>
-                    <div className={`${styles['ben-list']} box rounded-3 p-3 `}>
-                      <p>Increases Hair Volume</p>
-                    </div>
-                    <div className={`${styles['ben-list']} box rounded-3 p-3 `}>
-                      <p>Makes Hair Shiny and Smooth</p>
-                    </div>
-                    <div className={`${styles['ben-list']} box rounded-3 p-3 `}>
-                      <p>Reduces Dandruff</p>
-                    </div>
-                    <div className={`${styles['ben-list']} box rounded-3 p-3 `}>
-                      <p>Strengthen Scalp</p>
-                    </div>
-                    <div className={`${styles['ben-list']} box rounded-3 p-3 `}>
-                      <p>Smells Good</p>
-                    </div>
-
-                </Col>
-            </Row>
-        </Container>
-      </section>
+            <h3>Floral</h3>
+            <p className={styles.notescnt}>Enchanting Floral collection - perfect fragrances for every romantic soul.</p>
+          </Col>
+          <Col xs={6} md={2} className='text-center'>
+            <Image
+              width={121}
+              height={121}
+              variant="top"
+              src="/images/Woody.avif"
+              objectFit='contain'
+              layout='responsive'
+              alt='product'
+              className={styles.notesimg}
+            />
+            <h3>Woody</h3>
+            <p className={styles.notescnt}>Dive into our lit Woody fragrances—bringing those earthy vibes straight to you!
+            </p>
+          </Col>
+          <Col xs={6} md={2} className='text-center'>
+            <Image
+              width={121}
+              height={121}
+              variant="top"
+              src="/images/Fresh.avif"
+              objectFit='contain'
+              layout='responsive'
+              alt='product'
+              className={styles.notesimg}
+            />
+            <h3>Fresh</h3>
+            <p className={styles.notescnt}>Get the ultimate freshness with our Fresh scents—perfect for every mood!</p>
+          </Col>
+          <Col xs={6} md={2} className='text-center'>
+            <Image
+              width={121}
+              height={121}
+              variant="top"
+              src="/images/Citrus.png"
+              objectFit='contain'
+              layout='responsive'
+              alt='product'
+              className={styles.notesimg}
+            />
+            <h3>Musky</h3>
+            <p className={styles.notescnt}>Level up your scent game with our Musky vibes—bold, confident, and absolutely unforgettable!</p>
+          </Col>
+          <Col xs={6} md={2} className='text-center'>
+            <Image
+              width={121}
+              height={121}
+              variant="top"
+              src="/images/Gourmand.png"
+              objectFit='contain'
+              layout='responsive'
+              alt='product'
+              className={styles.notesimg}
+            />
+            <h3>Gourmand</h3>
+            <p className={styles.notescnt}>Satisfy your scent cravings—so mouthwatering, you'll want to lick yourself!</p>
+          </Col>
+          <Col xs={6} md={2} className='text-center'>
+            <Image
+              width={121}
+              height={121}
+              variant="top"
+              src="/images/Oriental.png"
+              objectFit='contain'
+              layout='responsive'
+              alt='product'
+              className={styles.notesimg}
+            />
+            <h3>Oriental</h3>
+            <p className={styles.notescnt}>Discover diverse Oriental scents, from sensual East to nature-inspired blends. strong, attractive, and utterly irresistible.</p>
+          </Col>
+        </Row>
+      </Container>
     </>
   )
 }

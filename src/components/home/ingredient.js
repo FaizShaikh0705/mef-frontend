@@ -7,74 +7,61 @@ import Button from 'react-bootstrap/Button';
 
 const ingredient = () => {
     return (
-        <section className={`${styles['ingredient-main']} my-4`}>
-            <Container fluid>
-                <Row className='text-center'>
-                <h2 className='mb-4'>Effective Hair Oil</h2>
-                    <div className='col-xl-3 col-12'>
-                        
-                        <Row>
-                        <div className={`${styles['ingredient-side-content']} col-xl-12 col-md-6`} style={{ padding: '0px 30px'}}>
-                                <Image
-                                    height="20"
-                                    width="30"
-                                    objectFit="contain"
-                                    src="/images/nochemicals.png"
-                                    alt="logo_img" />
-                                <h4>No Chemicals</h4>
-                                <p>Embrace chemical-free hair care with our formula, designed to give your hair the gentle treatment it deserves, without harsh chemicals.</p>
-                            </div>
-
-                            <div className={`${styles['']} col-xl-12 col-md-6`} style={{ padding: '0px 30px'}}>
-                                <Image
-                                    height="20"
-                                    width="30"
-                                    objectFit="contain"
-                                    src="/images/Herbal.png"
-                                    alt="logo_img" />
-                                <h4>Herbal</h4>
-                                <p>Experience the purity of nature with our herbal blend, crafted from natural ingredients for healthier hair.</p>
-                            </div>
-                        </Row>
-                    </div>
-                    <div className='col-xl-6 col-12' >
-                        <div>
-                            <Image
-                                className={styles['ingredient-image']}
-                                height="380"
-                                width="500"
-                                objectFit="contain"
-                                src="/images/productwithingredientmain.png"
-                                alt="logo_img" />
+        <Container fluid>
+            <Row className='my-5'>
+                <Col xs={12} md={4} className={styles.ctgrybox}>
+                    <div style={{ border: '1px solid #000', zIndex: '1' }}>
+                        <div style={{ position: 'absolute', bottom: '1rem', left: '3rem' }}>
+                            <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Fresh</h2>
+                            <p>For Summer</p>
                         </div>
+                        <Image
+                            style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
+                            src="/images/category1.jpg"
+                            width={250}
+                            height={250}
+                            objectFit='contain'
+                            layout='responsive'
+                            alt='category'
+                        />
                     </div>
-                    <div className='col-xl-3 col-12'>
-                        <Row>
-                            <div className={`${styles['ingredient-side-content']} col-xl-12 col-md-6`} style={{ padding: '0px 30px'}}>
-                                <Image
-                                    height="20"
-                                    width="30"
-                                    objectFit="contain"
-                                    src="/images/noperfume.png"
-                                    alt="logo_img" />
-                                <h4>No Perfumes</h4>
-                                <p>Enjoy the authentic scent of nature with our fragrance-free formula, providing pure nourishment without added perfumes.</p>
-                            </div>
-                            <div className={`${styles['']} col-xl-12 col-md-6`} style={{ padding: '0px 30px'}}>
-                                <Image
-                                    height="20"
-                                    width="30"
-                                    objectFit="contain"
-                                    src="/images/naturalicon.png"
-                                    alt="logo_img" />
-                                <h4>Natural</h4>
-                                <p>Unlock your hair's true potential with our entirely natural formula, offering the care you deserve.</p>
-                            </div>
-                        </Row>
+                </Col>
+                <Col xs={12} md={4} className={styles.ctgrybox}>
+                    <div style={{ border: '1px solid #000', zIndex: '1' }}>
+                        <div style={{ position: 'absolute', bottom: '1rem', left: '3rem' }}>
+                            <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Woody</h2>
+                            <p>For Winter</p>
+                        </div>
+                        <Image
+                            style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
+                            src="/images/category2.jpg"
+                            width={250}
+                            height={250}
+                            objectFit='contain'
+                            layout='responsive'
+                            alt='category'
+                        />
                     </div>
-                </Row>
-            </Container>
-        </section>
+                </Col>
+                <Col xs={12} md={4} className={styles.ctgrybox}>
+                    <div style={{ border: '1px solid #000', zIndex: '1' }}>
+                        <div style={{ position: 'absolute', bottom: '1rem', left: '3rem' }}>
+                            <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Floral</h2>
+                            <p>For All Season</p>
+                        </div>
+                        <Image
+                            style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
+                            src="/images/category3.jpg"
+                            width={250}
+                            height={250}
+                            objectFit='contain'
+                            layout='responsive'
+                            alt='category'
+                        />
+                    </div>
+                </Col>
+            </Row>
+        </Container>
     )
 }
 

@@ -12,11 +12,12 @@ const Home = ({ productData }) => {
   return (
     <>
       <HomeBanner />
-      {/* <Intro /> */}
+      <Intro />
       <Product productData={productData} />
       {/* <Offer /> */}
-      {/* <Ingredient /> */}
-      {/* <Benfits /> */}
+      <Ingredient />
+      <Product productData={productData} />
+      <Benfits />
       {/* <Testimony /> */}
       {/* <Reel /> */}
     </>
