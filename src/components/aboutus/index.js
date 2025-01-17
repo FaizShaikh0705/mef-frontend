@@ -21,7 +21,7 @@ const Index = () => {
           <Row>
             <Col md={6}>
               <div style={{ position: 'relative', paddingRight: '1rem', paddingLeft: '1rem' }}>
-                <div style={{ border: '1px solid #000', zIndex: '1' }}>
+                <div style={{ border: '1px solid #E1F4F3', zIndex: '1' }}>
                   <div style={{ position: 'absolute', bottom: '1rem', left: '3rem' }}>
                     <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Fresh</h2>
                     <p>For Summer</p>

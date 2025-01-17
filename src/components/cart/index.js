@@ -57,7 +57,7 @@ const index = () => {
   //         [_id]: (prevQuantity[_id] || 1) - 1,
   //     }));
   // };
-  const cpnCodStyl = { backgroundColor: '#000', padding: "2% 5%", borderRadius: "15px", color: "#d7b56d" };
+  const cpnCodStyl = { backgroundColor: '#E1F4F3', padding: "2% 5%", borderRadius: "15px", color: "#706C61" };
   const history = useRouter();
 
   useEffect(() => {
@@ -348,7 +348,7 @@ const index = () => {
                               </div>
                               <a
                                 href="#!"
-                                style={{ color: "#d7b56d" }}
+                                style={{ color: "#706C61" }}
                                 onClick={() => handleDelete(product)}
                               >
                                 <i className="fas fa-trash-alt"></i>
@@ -370,7 +370,7 @@ const index = () => {
               <Col lg={12}>
                 <div className={styles['coupon-chckout']}>
                   <div className="mt-4">
-                    <Form.Label className="col-12" style={{ color: "#000" }}  >Coupon  {cart.coupon ? cart.coupon.couponCode ? <small style={cpnCodStyl}  > Applied {cart.coupon.couponCode} </small> : "not applied" : "not applied"}    </Form.Label>
+                    <Form.Label className="col-12" style={{ color: "#E1F4F3" }}  >Coupon  {cart.coupon ? cart.coupon.couponCode ? <small style={cpnCodStyl}  > Applied {cart.coupon.couponCode} </small> : "not applied" : "not applied"}    </Form.Label>
                     <Form className="d-flex">
                       <Col>
                         <Form.Group className="mb-3" controlId="couponCodeInp">
@@ -409,7 +409,7 @@ const index = () => {
                     {/* <Form>
                       <Col>
                         <Form.Group controlId="formGridCity">
-                          <Form.Label style={{ color: "#000" }}>Select Delivery</Form.Label>
+                          <Form.Label style={{ color: "#E1F4F3" }}>Select Delivery</Form.Label>
                         </Form.Group></Col>
                       <Col>
                         <Form.Group controlId="formGridState">

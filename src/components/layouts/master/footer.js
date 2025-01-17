@@ -215,7 +215,7 @@ const Footer = () => {
         smooth
         color="#706C61"
         height="20"
-        style={{ backgroundColor: "#000",
+        style={{ backgroundColor: "#E1F4F3",
                  border:"2px solid #706C61" }}
       />
     </>

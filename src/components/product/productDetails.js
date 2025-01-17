@@ -301,7 +301,7 @@ const ProductDetailsContainer = ({
                     })`}</h3> */}
                   <div className="mt-2 d-flex">
                     <span className="me-2">Trusted by Many Customers</span>
-                    <span style={{ color: "#d7b56d" }}>
+                    <span style={{ color: "#706C61" }}>
                       <FaStar className="me-2" /><FaStar className="me-2" /><FaStar className="me-2" /><FaStar className="me-2" />
                     </span>
                   </div>

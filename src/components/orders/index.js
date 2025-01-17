@@ -354,7 +354,7 @@ const Index = () => {
                 ) : trackingData ? (
                   <>
                     {/* Track Status */}
-                    <p> <span style={{ fontSize: "25px", color: "#d7b56d" }}>
+                    <p> <span style={{ fontSize: "25px", color: "#706C61" }}>
                       <FaTruck />
                     </span>{" "}
                       Status :{statusMap[trackingData.shipment_status] || "Pending Status"}</p>
@@ -362,7 +362,7 @@ const Index = () => {
                      
                     { trackingData.shipment_track_activities ? trackingData.shipment_track_activities.length > 0 && (
                       <p>
-                        <span style={{ fontSize: "25px", color: "#d7b56d" }}>
+                        <span style={{ fontSize: "25px", color: "#706C61" }}>
                           <TiClipboard />
                         </span>{" "}
                         Live Location: {trackingData.shipment_track_activities[0]?.location}
@@ -371,7 +371,7 @@ const Index = () => {
 
                     {/* Estimated Delivery */}
                     <p>
-                      <span style={{ fontSize: "25px", color: "#d7b56d" }}>
+                      <span style={{ fontSize: "25px", color: "#706C61" }}>
                         <FaLocationDot />
                       </span>{" "}
                       Est. Delivery:{" "}
