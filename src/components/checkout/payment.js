@@ -4,8 +4,8 @@ import styles from './checkout.module.scss'
 import { useSelector, useDispatch } from "react-redux";
 import { razorPost } from "../../redux/apiCalls";
 import { resetCart, removeCoupon } from '../../redux/cartRedux';
-import { userRequest ,isTokenSet} from '../../requestMethods';
-import {logout} from '../../redux/userRedux'
+import { userRequest, isTokenSet } from '../../requestMethods';
+import { logout } from '../../redux/userRedux'
 import { setDeliveryCharges, setMop } from "../../redux/orderRedux";
 import Loading from "../loading";
 
@@ -20,11 +20,16 @@ const Payment = ({ className, onNext, onBack, }) => {
   const [modeOfPayment, setModeOfPayment] = useState("");
   const [showLoading, setshowLoading] = useState(0);
   const [deliveryCharges, setDeliveryCharges] = useState({});
-  
+
+  // if (!isTokenSet) {
+  //   dispatch(logout());
+  //   window.location.href = "/login";
+  // }
+
   if (!isTokenSet) {
-    dispatch(logout());
-    window.location.href = "/login";
+    window.location.reload();
   }
+
 
   // console.log(user, "placeOrder")
 
@@ -45,16 +50,16 @@ const Payment = ({ className, onNext, onBack, }) => {
         // postLongDetail: product.postLongDetail,
         selectedVariantName: product.selectedVariantName,
         selectedVariantPrice: product.selectedVariantPrice,
-        length:product.length,
-        breadth:product.breadth,
-        height:product.height,
-        weight:product.weight,
+        length: product.length,
+        breadth: product.breadth,
+        height: product.height,
+        weight: product.weight,
       })),
       amount: cart.total,
       couponCode: cart.coupon ? cart.coupon.couponCode : "",
       quantity: cart.quantity,
-      billingAddress:user.currentUser.billingAddress,
-      shippingAddress:order.shippingAddress[0],
+      billingAddress: user.currentUser.billingAddress,
+      shippingAddress: order.shippingAddress[0],
       deliveryCharge: delCharge,
       mop: "Online",
       status: 'pending',
@@ -68,14 +73,14 @@ const Payment = ({ className, onNext, onBack, }) => {
 
       // After successfully placing the order, reset the cart
       // dispatch(resetCart());
-      document.getElementById("payOnlineBtn").setAttribute("disabled","disabled");
+      document.getElementById("payOnlineBtn").setAttribute("disabled", "disabled");
       setshowLoading(1);
 
       var temp = await dispatch(razorPost(orderData));
-      
+
       if (temp.payload) {
         if (temp.payload.short_url) {
-          window.open(temp.payload.short_url, '_blank').focus();
+          window.open(temp.payload.short_url).focus();
           dispatch(removeCoupon());
           dispatch(resetCart());
           window.location = "/success";
@@ -132,7 +137,7 @@ const Payment = ({ className, onNext, onBack, }) => {
     //   }
 
     //   console.log(postalCode);
-      
+
 
     //   if (String(postalCode).startsWith('400')) {
     //     return `₹${mumbaiRate}`;
@@ -145,9 +150,9 @@ const Payment = ({ className, onNext, onBack, }) => {
     // const charge = calculateDeliveryCharge(selectPostalCode);
 
     try {
-      if(order.shippingAddress.length){
+      if (order.shippingAddress.length) {
         setselectPostalCode(order.shippingAddress[0].shippingpostalCode)
-      }else{
+      } else {
         setselectPostalCode(user.currentUser.address.postalCode)
       }
     } catch (error) {
@@ -155,7 +160,7 @@ const Payment = ({ className, onNext, onBack, }) => {
     }
 
     if (String(selectPostalCode).startsWith('400')) {
-      
+
       setdelCharge(deliveryCharges.mumbaiRate || 80);
     } else if (String(selectPostalCode).startsWith('700')) {
       setdelCharge(deliveryCharges.northeastRate || 120);
@@ -175,14 +180,14 @@ const Payment = ({ className, onNext, onBack, }) => {
 
     // Check if the postal code is in the Mumbai range
     // if (postalCode >= mumbaiPostalCodeRange.start && postalCode <= mumbaiPostalCodeRange.end) {
-        // If the postal code is in the range, proceed with the next step
-        onNext();
+    // If the postal code is in the range, proceed with the next step
+    onNext();
     // } else {
     //     // If the postal code is not in the range, display an error message or handle it accordingly
     //     alert("COD only available in Mumbai");
     //     // You might want to display an error message to the user or handle it in another way
     // }
-}
+  }
 
 
 
@@ -200,7 +205,7 @@ const Payment = ({ className, onNext, onBack, }) => {
 
   return (
     <>
-      {showLoading ? <Loading/> : ""} 
+      {showLoading ? <Loading /> : ""}
       <h5 className="mb-3">
         <a className="text-body"
           onClick={onBack}>
@@ -220,13 +225,13 @@ const Payment = ({ className, onNext, onBack, }) => {
             >
               Pay Online
             </Button>
-            <Button
+            {/* <Button
               variant="outline-dark mx-2 mb-3"
               className={styles.paymentButton}
               onClick={() => CodOrder()}
             >
               COD (Cash On Delivery)
-            </Button>
+            </Button> */}
           </Col>
         </Row>
       </Container>

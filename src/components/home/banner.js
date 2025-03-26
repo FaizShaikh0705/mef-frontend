@@ -38,7 +38,7 @@ const HomeBanner = () => {
   return (
     <>
       <section className={styles["home-slidebanner"]}>
-{/*        
+        {/*        
               <OwlCarousel
                 className="owl-theme"
                 responsive={state.responsive}
@@ -48,22 +48,42 @@ const HomeBanner = () => {
                 autoplayTimeout={5000}
                 dots={false}
               > */}
-               <Carousel fade indicators={false}>
-               <Carousel.Item interval={3000}>
-                  <div className={styles["learn-h-sec1"]}>
-                    <Link href="#shop" className={styles["btn"]}>
-                      Shop Now
-                    </Link>
-                  </div>
-              </Carousel.Item>
-              <Carousel.Item interval={3000}>
-                  <div className={styles["learn-h-sec2"]}>
-                    <Link href="#shop" className={styles["btn"]}>
-                      Shop Now
-                    </Link>
-                  </div>
-              </Carousel.Item>
-
+        <Carousel fade indicators={false}>
+          <Carousel.Item interval={3000}>
+            <div className={styles["learn-h-sec1"]}>
+              <Link href="#shop" className={styles["btn"]}>
+                Shop Now
+              </Link>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item interval={3000}>
+            <div className={styles["learn-h-sec2"]}>
+              <Link href="#shop" className={styles["btn"]}>
+                Shop Now
+              </Link>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item interval={3000}>
+            <div className={styles["learn-h-sec3"]}>
+              <Link href="#shop" className={styles["btn"]}>
+                Shop Now
+              </Link>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item interval={3000}>
+            <div className={styles["learn-h-sec4"]}>
+              <Link href="#shop" className={styles["btn"]}>
+                Shop Now
+              </Link>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item interval={3000}>
+            <div className={styles["learn-h-sec5"]}>
+              <Link href="#shop" className={styles["btn"]}>
+                Shop Now
+              </Link>
+            </div>
+          </Carousel.Item>
 
 
 
@@ -111,9 +131,9 @@ const HomeBanner = () => {
                   />
                 </div>
                 </Carousel.Item> */}
-                </Carousel>
-              {/* </OwlCarousel> */}
-              
+        </Carousel>
+        {/* </OwlCarousel> */}
+
       </section>
     </>
   );

@@ -1,7 +1,7 @@
 import axios from "axios";
 
-// const BASE_URL = "http://localhost:5002/api/";
-const BASE_URL = "http://13.235.73.30/api/";
+const BASE_URL = "http://localhost:5002/api/";
+// const BASE_URL = "http://13.235.73.30/api/";
 // const TOKEN =
 //   JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user).currentUser
 //     .accessToken || "";

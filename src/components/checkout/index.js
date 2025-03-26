@@ -21,11 +21,31 @@ const index = () => {
   const pixelCalled = useRef(false);
   const currentUser = useSelector((state) => state.user);
   const cart = useSelector((state) => state.cart);
-  console.log(currentUser)
+  // console.log(currentUser)
   const router = useRouter();
 
 
-  const [currentStep, setCurrentStep] = useState("shipping");
+  // Initialize currentStep from localStorage or default to "shipping"
+  const [currentStep, setCurrentStep] = useState(() => {
+    const savedStep = localStorage.getItem("checkoutStep");
+    return savedStep && ["shipping", "payment", "placeorder"].includes(savedStep)
+      ? savedStep
+      : "shipping";
+  });
+
+  // Update localStorage whenever currentStep changes
+  useEffect(() => {
+    localStorage.setItem("checkoutStep", currentStep);
+  }, [currentStep]);
+
+  // // Retrieve the step from localStorage when the component mounts
+  // useEffect(() => {
+  //   const savedStep = localStorage.getItem("checkoutStep");
+  //   if (savedStep && ["shipping", "payment", "placeorder"].includes(savedStep)) {
+  //     setCurrentStep(savedStep);
+  //   }
+  // }, []);
+
 
   const handleNext = () => {
     if (currentStep === "shipping") {
@@ -47,11 +67,12 @@ const index = () => {
     }
   }
 
-  useEffect(() => {
-    if ((!currentUser || !currentUser.currentUser)) {
-      router.push("/login"); // Redirect to login page if user is not logged in
-    }
-  }, [currentUser]);
+  // useEffect(() => {
+  //   if ((!currentUser || !currentUser.currentUser)) {
+  //     router.push("/login"); // Redirect to login page if user is not logged in
+  //   }
+  // }, [currentUser]);
+
 
   useEffect(() => {
     if ((!cart.products.length)) {
@@ -101,30 +122,30 @@ const index = () => {
       <Container>
         <Row>
           <Col lg={12}>
-            {currentUser && currentUser.currentUser ? (
-              <>
-                {currentStep === "shipping" && (
-                  <Shipping
-                    className={`${styles["shipping"]} ${currentStep === "shipping" ? "" : styles["hidden"]}`}
-                    onNext={handleNext}
-                  />
-                )}
-                {currentStep === "payment" && (
-                  <Payment
-                    className={`${styles["payment"]} ${currentStep === "payment" ? "" : styles["hidden"]}`}
-                    onNext={handleNext}
-                    onBack={handleback}
-                  />
-                )}
-                {currentStep === "placeorder" && (
-                  <Placeorder
-                    className={`${styles["placeorder"]} ${currentStep === "placeorder" ? "" : styles["hidden"]}`}
-                    onNext={handleNext}
-                    onBack={handleback}
-                  />
-                )}
-              </>
-            ) : null}
+            {/* {currentUser && currentUser.currentUser ? ( */}
+            <>
+              {currentStep === "shipping" && (
+                <Shipping
+                  className={`${styles["shipping"]} ${currentStep === "shipping" ? "" : styles["hidden"]}`}
+                  onNext={handleNext}
+                />
+              )}
+              {currentStep === "payment" && (
+                <Payment
+                  className={`${styles["payment"]} ${currentStep === "payment" ? "" : styles["hidden"]}`}
+                  onNext={handleNext}
+                  onBack={handleback}
+                />
+              )}
+              {currentStep === "placeorder" && (
+                <Placeorder
+                  className={`${styles["placeorder"]} ${currentStep === "placeorder" ? "" : styles["hidden"]}`}
+                  onNext={handleNext}
+                  onBack={handleback}
+                />
+              )}
+            </>
+            {/* ) : null} */}
           </Col>
         </Row>
       </Container>

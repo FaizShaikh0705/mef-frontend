@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { useSelector, useDispatch } from "react-redux";
 import StripeCheckout from "react-stripe-checkout";
-import { userRequest } from "../../requestMethods";
+import { userRequest, isTokenSet } from "../../requestMethods";
 import { useRouter } from "next/router";
 import { placeOrder } from "../../redux/apiCalls";
 import { resetCart, removeCoupon } from '../../redux/cartRedux';
@@ -25,6 +25,12 @@ const Placeorder = ({ className, onNext, onBack }) => {
   const [deliveryCharges, setDeliveryCharges] = useState({});
   const currentUser = useSelector((state) => state.currentUser)
   const dispatch = useDispatch();
+
+
+  // if (!isTokenSet) {
+  //   window.location.reload();
+  // }
+
   // console.log(user);
   const selectPostalCode = order.shippingAddress ? order.shippingAddress[0].shippingpostalCode : 4000050;
   console.log(selectPostalCode);
@@ -150,7 +156,7 @@ const Placeorder = ({ className, onNext, onBack }) => {
     const fetchDeliveryCharges = async () => {
       try {
         const response = await userRequest.get('/dlvry'); // Update with your API endpoint
-        console.log('Response data:', response.data[0]);
+        // console.log('Response data:', response.data[0]);
         setDeliveryCharges(response.data[0]);
       } catch (error) {
         console.error('Error fetching delivery charges:', error);
@@ -167,13 +173,13 @@ const Placeorder = ({ className, onNext, onBack }) => {
       }
 
       if (String(postalCode).startsWith('400')) {
-        console.log("mumbaiCharges 2", deliveryCharges.mumbaiRate)
+        // console.log("mumbaiCharges 2", deliveryCharges.mumbaiRate)
         return `₹${deliveryCharges.mumbaiRate}`;
       } else if (String(postalCode).startsWith('79')) {
-        console.log("northCharges 2", deliveryCharges.northeastRate)
+        // console.log("northCharges 2", deliveryCharges.northeastRate)
         return `₹${deliveryCharges.northeastRate}`;
       } else {
-        console.log("AllIndiaCharges 2", deliveryCharges.allIndiaRate)
+        // console.log("AllIndiaCharges 2", deliveryCharges.allIndiaRate)
         return `₹${deliveryCharges.allIndiaRate}`;
       }
     };
@@ -213,6 +219,7 @@ const Placeorder = ({ className, onNext, onBack }) => {
         selectedVariantPrice: product.selectedVariantPrice,
         gstNumber: product.gstNumber,
         productCode: product.productCode,
+        ...(product.productCode1 ? { productCode1: product.productCode1 } : {}),
         length: product.length || 0,
         breadth: product.breadth || 0,
         height: product.height || 0,
@@ -236,6 +243,7 @@ const Placeorder = ({ className, onNext, onBack }) => {
 
     try {
       // Dispatch the placeOrder action
+      // console.log("Token", user.currentUser.accessToken)
       await dispatch(placeOrder(orderData));
       dispatch(placeOrderSuccess(orderData));
       // After successfully placing the order, reset the cart
@@ -382,7 +390,7 @@ const Placeorder = ({ className, onNext, onBack }) => {
                     <p>{product.postTopicName} ({product.quantity})</p>
                     <p>₹{product.selectedVariantPrice}</p>
                   </div>
-                  <span className={styles['gst']}>HSN #{product.productCode}</span> <br />
+                  {product.productCode1 ? (<><span className={styles['gst']}>HSN #{product.productCode} #{product.productCode1}</span> <br /></>) : (<><span className={styles['gst']}>HSN #{product.productCode}</span> <br /></>)}
                   <span className={styles['gst']}>GST ({product.gstNumber}%)</span> <br />
                   {/* <span className={styles['gst']}> {calcGST(user.currentUser.address.postalCode, product)}</span> */}
                   <hr />

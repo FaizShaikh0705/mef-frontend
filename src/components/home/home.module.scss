@@ -36,7 +36,97 @@
   }
 
   .learn-h-sec2 {
-    background: url(../../../public/images/bannermobile1.png) no-repeat bottom / cover;
+    background: url(../../../public/images/1.png) no-repeat bottom / cover;
+    padding: 0 0 36% 0;
+    position: relative;
+
+    //margin-top: 50px;
+    @media (max-width: 767px) {
+      background: url(../../../public/images/offerbannermobile1.jpg) no-repeat center / cover;
+      padding: 0 0 136% 0;
+      text-align: left;
+    }
+
+    .btn {
+      position: absolute;
+      left: 43%;
+      top: 73%;
+      width: 13%;
+      height: 11%;
+      font-size: 0;
+
+      // background-color: #08089b;
+      @media (max-width: 767px) {
+        left: 37%;
+        top: 52%;
+        width: 22%;
+        height: 5%;
+      }
+    }
+  }
+
+  .learn-h-sec3 {
+    background: url(../../../public/images/2.png) no-repeat bottom / cover;
+    padding: 0 0 36% 0;
+    position: relative;
+
+    //margin-top: 50px;
+    @media (max-width: 767px) {
+      background: url(../../../public/images/offerbannermobile1.jpg) no-repeat center / cover;
+      padding: 0 0 136% 0;
+      text-align: left;
+    }
+
+    .btn {
+      position: absolute;
+      left: 43%;
+      top: 73%;
+      width: 13%;
+      height: 11%;
+      font-size: 0;
+
+      // background-color: #08089b;
+      @media (max-width: 767px) {
+        left: 37%;
+        top: 52%;
+        width: 22%;
+        height: 5%;
+      }
+    }
+  }
+
+  .learn-h-sec4 {
+    background: url(../../../public/images/3.png) no-repeat bottom / cover;
+    padding: 0 0 36% 0;
+    position: relative;
+
+    //margin-top: 50px;
+    @media (max-width: 767px) {
+      background: url(../../../public/images/offerbannermobile1.jpg) no-repeat center / cover;
+      padding: 0 0 136% 0;
+      text-align: left;
+    }
+
+    .btn {
+      position: absolute;
+      left: 43%;
+      top: 73%;
+      width: 13%;
+      height: 11%;
+      font-size: 0;
+
+      // background-color: #08089b;
+      @media (max-width: 767px) {
+        left: 37%;
+        top: 52%;
+        width: 22%;
+        height: 5%;
+      }
+    }
+  }
+
+  .learn-h-sec5 {
+    background: url(../../../public/images/4.png) no-repeat bottom / cover;
     padding: 0 0 36% 0;
     position: relative;
 
