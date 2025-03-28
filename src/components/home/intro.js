@@ -41,7 +41,7 @@ const intro = () => {
               height="380"
               width="450"
               objectFit="contain"
-              src="/images/product1.webp"
+              src="/images/product/1.png"
               alt="logo_img"
             />
           </Col>
