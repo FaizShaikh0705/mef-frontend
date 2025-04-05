@@ -299,6 +299,7 @@ const index = () => {
                                   width="81"
                                   alt="product_img"
                                   src={firstImage}
+                                  unoptimized
                                 />
                               </div>
                               <div className="ms-3">

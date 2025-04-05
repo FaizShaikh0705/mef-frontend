@@ -38,10 +38,10 @@ const intro = () => {
           <Col className="offset-lg-1" lg={5}>
             <Image
               className={styles["intro-image"]}
-              height="380"
-              width="450"
+              height="700"
+              width="600"
               objectFit="contain"
-              src="/images/product/1.png"
+              src="/images/about22.webp"
               alt="logo_img"
               unoptimized
             />

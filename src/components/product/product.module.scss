@@ -5,7 +5,7 @@
         margin-top: 23px;
     }
 
-    background-image: url(../../../public/images/productbanner.jpg);
+    background-color: #E1F4F3;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -32,7 +32,7 @@
     background-size: cover;
 
     @media (max-width:767px) {
-        background-image: url(../../../public/images/backgroundimage1.jpg);
+        background-color: #E1F4F3;
     }
 
     a {
@@ -64,9 +64,10 @@
             }
         }
 
-        .card-heading{
+        .card-heading {
             height: 50px;
         }
+
         .price-txt {
             font-size: 19px;
 

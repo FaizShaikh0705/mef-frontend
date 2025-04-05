@@ -536,123 +536,61 @@ const ProductDetailsContainer = ({
             </Col>
 
             <Col lg={12}>
-              {productCode == "30049011" ?
-                <>
-                  <div className="text-center">
-                    <h2>FAQ</h2>
-                  </div>
-                  <div className="mt-4">
-                    <Accordion>
-                      <Accordion.Item eventKey="0">
-                        <Accordion.Header>
-                          Lorem lorem lorem lorem lorem lorem lorem lorem?
-                        </Accordion.Header>
-                        <Accordion.Body>
-                          MKM, lorem lorem lorem lorem lorem lorem lorem lorem
-                        </Accordion.Body>
-                      </Accordion.Item>
-                      <Accordion.Item eventKey="1">
-                        <Accordion.Header>
-                          Lorem lorem lorem lorem lorem lorem lorem lorem?
-                        </Accordion.Header>
-                        <Accordion.Body>
-                          MKM, lorem lorem lorem lorem lorem lorem lorem lorem
-                        </Accordion.Body>
-                      </Accordion.Item>
-                      <Accordion.Item eventKey="2">
-                        <Accordion.Header>
-                          Lorem lorem lorem lorem lorem lorem lorem lorem?
-                        </Accordion.Header>
-                        <Accordion.Body>
-                          MKM, lorem lorem lorem lorem lorem lorem lorem lorem
-                        </Accordion.Body>
-                      </Accordion.Item>
-                      <Accordion.Item eventKey="3">
-                        <Accordion.Header>
-                          Lorem lorem lorem lorem lorem lorem lorem lorem?
-                        </Accordion.Header>
-                        <Accordion.Body>
-                          MKM, lorem lorem lorem lorem lorem lorem lorem lorem
-                        </Accordion.Body>
-                      </Accordion.Item>
-                      <Accordion.Item eventKey="4">
-                        <Accordion.Header>
-                          Lorem lorem lorem lorem lorem lorem lorem lorem?
-                        </Accordion.Header>
-                        <Accordion.Body>
-                          MKM, lorem lorem lorem lorem lorem lorem lorem lorem
-                        </Accordion.Body>
-                      </Accordion.Item>
-                      <Accordion.Item eventKey="5">
-                        <Accordion.Header>
-                          Lorem lorem lorem lorem lorem lorem lorem lorem?
-                        </Accordion.Header>
-                        <Accordion.Body>
-                          MKM, lorem lorem lorem lorem lorem lorem lorem lorem
-                        </Accordion.Body>
-                      </Accordion.Item>
-                      <Accordion.Item eventKey="6">
-                        <Accordion.Header>
-                          Lorem lorem lorem lorem lorem lorem lorem lorem?
-                        </Accordion.Header>
-                        <Accordion.Body>
-                          MKM, lorem lorem lorem lorem lorem lorem lorem lorem
-                        </Accordion.Body>
-                      </Accordion.Item>
-                      <Accordion.Item eventKey="7">
-                        <Accordion.Header>
-                          Lorem lorem lorem lorem lorem lorem lorem lorem?
-                        </Accordion.Header>
-                        <Accordion.Body>
-                          MKM, lorem lorem lorem lorem lorem lorem lorem lorem
-                        </Accordion.Body>
-                      </Accordion.Item>
-                      <Accordion.Item eventKey="8">
-                        <Accordion.Header>
-                          Lorem lorem lorem lorem lorem lorem lorem lorem?
-                        </Accordion.Header>
-                        <Accordion.Body>
-                          MKM, lorem lorem lorem lorem lorem lorem lorem lorem
-                        </Accordion.Body>
-                      </Accordion.Item>
-                    </Accordion>
-                  </div>
-                </>
-                :
-                <>
-                  <div className="text-center mt-5">
-                    <h2>FAQ’s</h2>
-                  </div>
-                  <div className="mt-4">
-                    <Accordion>
-                      <Accordion.Item eventKey="0">
-                        <Accordion.Header>
-                          Lorem lorem lorem lorem lorem lorem lorem lorem?
-                        </Accordion.Header>
-                        <Accordion.Body>
-                          Yes, lorem lorem lorem lorem, lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem.
-                        </Accordion.Body>
-                      </Accordion.Item>
-                      <Accordion.Item eventKey="1">
-                        <Accordion.Header>
-                          Lorem lorem lorem lorem lorem lorem lorem lorem?
-                        </Accordion.Header>
-                        <Accordion.Body>
-                          Yes, lorem lorem lorem lorem, lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem.
-                        </Accordion.Body>
-                      </Accordion.Item>
-                      <Accordion.Item eventKey="2">
-                        <Accordion.Header>
-                          Lorem lorem lorem lorem lorem lorem lorem lorem?
-                        </Accordion.Header>
-                        <Accordion.Body>
-                          Yes, lorem lorem lorem lorem, lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem.
-                        </Accordion.Body>
-                      </Accordion.Item>
-                    </Accordion>
-                  </div>
-                </>
-              }
+              <div className="text-center">
+                <h2>FAQ</h2>
+              </div>
+              <div className="mt-4">
+                <Accordion>
+                  <Accordion.Item eventKey="0">
+                    <Accordion.Header>What is MKM PARFUM?</Accordion.Header>
+                    <Accordion.Body>
+                      MKM PARFUM is a premium fragrance house offering long-lasting, luxurious perfumes crafted with high-quality ingredients. Our scents are inspired by both classic and modern fragrance profiles that suit every mood and moment.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="1">
+                    <Accordion.Header>Are your perfumes original or inspired?</Accordion.Header>
+                    <Accordion.Body>
+                      We offer a curated selection of both original blends and inspired expressions of some of the world's most iconic fragrances. Every scent is carefully formulated to deliver sophistication, longevity, and uniqueness.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="2">
+                    <Accordion.Header>How long do MKM PARFUM fragrances last?</Accordion.Header>
+                    <Accordion.Body>
+                      Our perfumes are Eau de Parfum (EDP) concentration, which ensures a strong projection and long-lasting wear — typically lasting 8 to 12 hours, depending on your skin type and the weather.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="3">
+                    <Accordion.Header>Do you offer samples before purchasing a full bottle?</Accordion.Header>
+                    <Accordion.Body>
+                      Yes, we offer sample packs and 5ml miniatures so you can try before investing in a full-size bottle. Explore your favorites and find the perfect signature scent.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="4">
+                    <Accordion.Header>Is MKM PARFUM unisex?</Accordion.Header>
+                    <Accordion.Body>
+                      Absolutely. Many of our fragrances are gender-neutral, designed to suit every personality regardless of gender. We also label our perfumes by scent profile (e.g., woody, floral, oriental) to help guide your choice.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="5">
+                    <Accordion.Header>How can I place an order?</Accordion.Header>
+                    <Accordion.Body>
+                      You can order directly through our official website or WhatsApp ordering system. Just browse, select, and checkout — it’s that simple.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="7">
+                    <Accordion.Header>How long does delivery take?</Accordion.Header>
+                    <Accordion.Body>
+                      Orders are usually dispatched within 24-48 hours. Delivery typically takes 3 to 7 business days, depending on your location.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="8">
+                    <Accordion.Header>What if I receive a damaged or wrong product?</Accordion.Header>
+                    <Accordion.Body>
+                      Customer satisfaction is our priority. In case of any issue, contact us within 24 hours of delivery, and we’ll assist you with a return, exchange, or refund process.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+              </div>
             </Col>
 
 
