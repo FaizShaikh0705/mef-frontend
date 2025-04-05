@@ -17,6 +17,7 @@ const Benfits = () => {
               layout='responsive'
               alt='product'
               className={styles.notesimg}
+              unoptimized
             />
             <h3>Floral</h3>
             <p className={styles.notescnt}>Enchanting Floral collection - perfect fragrances for every romantic soul.</p>
@@ -31,6 +32,7 @@ const Benfits = () => {
               layout='responsive'
               alt='product'
               className={styles.notesimg}
+              unoptimized
             />
             <h3>Woody</h3>
             <p className={styles.notescnt}>Dive into our lit Woody fragrances—bringing those earthy vibes straight to you!
@@ -46,6 +48,7 @@ const Benfits = () => {
               layout='responsive'
               alt='product'
               className={styles.notesimg}
+              unoptimized
             />
             <h3>Fresh</h3>
             <p className={styles.notescnt}>Get the ultimate freshness with our Fresh scents—perfect for every mood!</p>
@@ -60,6 +63,7 @@ const Benfits = () => {
               layout='responsive'
               alt='product'
               className={styles.notesimg}
+              unoptimized
             />
             <h3>Musky</h3>
             <p className={styles.notescnt}>Level up your scent game with our Musky vibes—bold, confident, and absolutely unforgettable!</p>
@@ -74,6 +78,7 @@ const Benfits = () => {
               layout='responsive'
               alt='product'
               className={styles.notesimg}
+              unoptimized
             />
             <h3>Gourmand</h3>
             <p className={styles.notescnt}>Satisfy your scent cravings—so mouthwatering, you'll want to lick yourself!</p>
@@ -88,6 +93,7 @@ const Benfits = () => {
               layout='responsive'
               alt='product'
               className={styles.notesimg}
+              unoptimized
             />
             <h3>Oriental</h3>
             <p className={styles.notescnt}>Discover diverse Oriental scents, from sensual East to nature-inspired blends. strong, attractive, and utterly irresistible.</p>

@@ -154,6 +154,7 @@ const blogContent = ({ blogData: initialBlogData }) => {
                                             width="341"
                                             alt={item[1].postImage}
                                             src={item[1].postImage}
+                                            unoptimized
                                         />
                                         <div className="card-body">
                                             {/* <p><VscAccount />

@@ -27,7 +27,7 @@ const Index = () => {
                     <p style={{color:'#fff'}}>For Summer</p>
                   </div>
                   <Image
-                    style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
+                    style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1',marginBottom:'20px' }}
                     src="/images/about11.webp"
                     width={250}
                     height={250}

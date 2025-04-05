@@ -140,6 +140,7 @@ const Product = ({ productData: initialProductData }) => {
                           alt="firstImage"
                           src={firstImage}
                           // className="mt-1"
+                          unoptimized
                         />
                       </Link>
                       <Card.Body className="justify-content-center">

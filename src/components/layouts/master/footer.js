@@ -122,6 +122,7 @@ const Footer = () => {
                     objectFit="contain"
                     src="/images/FB.png"
                     alt="logo_img"
+                    unoptimized
                   />
                   {/* </Link> */}
                 </li>
@@ -133,6 +134,7 @@ const Footer = () => {
                     objectFit="contain"
                     src="/images/IG.png"
                     alt="logo_img"
+                    unoptimized
                   />
                   {/* </Link> */}
                 </li>
@@ -144,6 +146,7 @@ const Footer = () => {
                     objectFit="contain"
                     src="/images/YT.png"
                     alt="logo_img"
+                    unoptimized
                   />
                   {/* </Link> */}
                 </li>

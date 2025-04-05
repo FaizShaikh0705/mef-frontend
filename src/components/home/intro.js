@@ -43,6 +43,7 @@ const intro = () => {
               objectFit="contain"
               src="/images/product/1.png"
               alt="logo_img"
+              unoptimized
             />
           </Col>
         </Row>

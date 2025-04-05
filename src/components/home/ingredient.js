@@ -23,6 +23,7 @@ const ingredient = () => {
                             objectFit='contain'
                             layout='responsive'
                             alt='category'
+                            unoptimized
                         />
                     </div>
                 </Col>
@@ -40,6 +41,7 @@ const ingredient = () => {
                             objectFit='contain'
                             layout='responsive'
                             alt='category'
+                            unoptimized
                         />
                     </div>
                 </Col>
@@ -57,6 +59,7 @@ const ingredient = () => {
                             objectFit='contain'
                             layout='responsive'
                             alt='category'
+                            unoptimized
                         />
                     </div>
                 </Col>

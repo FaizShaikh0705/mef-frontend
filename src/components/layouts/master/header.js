@@ -14,6 +14,7 @@ import { publicRequest } from "../../../requestMethods";
 import { useRouter } from 'next/router';
 
 
+
 // if (typeof window !== "undefined") {
 //   window.dataLayer = window.dataLayer || [];
 //   function gtag() {
@@ -24,13 +25,13 @@ import { useRouter } from 'next/router';
 // }
 
 const Header = ({ productData: initialProductData, sluginput }) => {
-  // if (isMobile) {
-  //   $(".nav-link").click(function () {
-  //     // if(!$(this).hasClass("dropdown-toggle")){
-  //     $("#navcolbtn").click();
-  //     // }
-  //   });
-  // }
+  if (isMobile) {
+    $(".nav-link").click(function () {
+      // if(!$(this).hasClass("dropdown-toggle")){
+      $("#navcolbtn").click();
+      // }
+    });
+  }
   const [product, setProduct] = useState({});
   const [selectedVariants, setSelectedVariants] = useState({});
 
@@ -138,6 +139,7 @@ const Header = ({ productData: initialProductData, sluginput }) => {
                 src="/images/logo.png"
                 alt="logo_img"
                 className={styles["nav-logo"]}
+                unoptimized
               />
             </Link>
             <Navbar.Collapse id="navbarScroll">
