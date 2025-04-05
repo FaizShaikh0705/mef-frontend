@@ -155,6 +155,10 @@ const Contact = () => {
               <Link href='https://www.instagram.com/qirah_oil?igsh=MWthamJtb2JscGNldA%3D%3D&utm_source=qr ' target="blank"><p>mkmparfum</p></Link>
 
             </Col>
+
+            <Col>
+              <iframe className='rounded-3 shadow mt-5' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120562.19529718372!2d72.91861664037916!3d19.214035642126206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b8fcfe76fd59%3A0xcf367d85f7c50283!2sThane%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1743886763116!5m2!1sen!2sin" width="100%" height="470" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </Col>
           </Row>
         </Container>
       </section>

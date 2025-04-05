@@ -23,24 +23,32 @@ const Index = () => {
               <div style={{ position: 'relative', paddingRight: '1rem', paddingLeft: '1rem' }}>
                 <div style={{ border: '1px solid #E1F4F3', zIndex: '1' }}>
                   <div style={{ position: 'absolute', bottom: '1rem', left: '3rem' }}>
-                    <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Fresh</h2>
-                    <p>For Summer</p>
+                    <h2 style={{ fontFamily: 'Quentin, sans-serif',color:'#fff' }}>Fresh</h2>
+                    <p style={{color:'#fff'}}>For Summer</p>
                   </div>
                   <Image
                     style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
-                    src="/images/category2.jpg"
+                    src="/images/about11.webp"
                     width={250}
                     height={250}
                     objectFit='contain'
                     layout='responsive'
                     alt='category'
+                    unoptimized
                   />
                 </div>
               </div>
             </Col>
-            <Col className={styles.abtcnt} md={5}>
-              <h2 style={{ fontWeight: '300' }}>NATURAL ORGANIC <br />COSMETICS PROMOTES <br />REJUVENATION</h2>
-              <p>Bleak cod cutthroat eel sargassum fish panga sucker beardfish lionfish batfish eulachon Raccoon butterfly fish tetra. Pejerrey combtooth blenny Sundaland Noodlefish pipefish zebra shark beaked salmon hillstream loach New Zealand smelt salmon false moray pelican eel stoneroller minnow.</p>
+            <Col className={styles.abtcnt} md={6}>
+              <h1 style={{ fontWeight: '300' }}>Welcome to MKM Parfum – <br/> Where Scent Becomes Soul.</h1>
+              <p>At MKM Parfum, we believe that a fragrance is more than just a scent – it’s a memory, a mood, a moment captured in time. Our mission is to craft perfumes that speak to the heart, ignite the senses, and define individuality.
+                <br /><br />
+                Founded with a passion for fine perfumery, MKM Parfum blends tradition with innovation, using only the finest ingredients sourced from around the world. Every bottle is a journey – from the fresh breezes of the Mediterranean to the deep warmth of Arabian oud, our creations are crafted to suit every mood, personality, and occasion.
+                <br /><br />
+                Each fragrance is a story, and every wearer is the storyteller.
+                <br /><br />
+                Whether you’re drawn to the bold, the exotic, the romantic, or the refreshing, MKM Parfum offers a collection that complements your essence.
+              </p>
             </Col>
           </Row>
         </Container>

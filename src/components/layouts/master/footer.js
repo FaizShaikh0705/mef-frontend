@@ -115,7 +115,7 @@ const Footer = () => {
             <h3 className="mb-4">Social Links</h3>
               <ul className="d-flex" style={{ listStyle: "none" }}>
                 <li className={styles["footer-links"]}>
-                  <Link href='https://www.facebook.com/qirah.hair.care?mibextid=LQQJ4d' target="blank">
+                  {/* <Link href='https://www.facebook.com/qirah.hair.care?mibextid=LQQJ4d' target="blank"> */}
                   <Image
                     height="40"
                     width="40"
@@ -123,10 +123,10 @@ const Footer = () => {
                     src="/images/FB.png"
                     alt="logo_img"
                   />
-                  </Link>
+                  {/* </Link> */}
                 </li>
                 <li className={styles["footer-links"]}>
-                  <Link href='https://www.instagram.com/qirah_oil?igsh=MWthamJtb2JscGNldA%3D%3D&utm_source=qr ' target="blank">
+                  {/* <Link href='https://www.instagram.com/qirah_oil?igsh=MWthamJtb2JscGNldA%3D%3D&utm_source=qr ' target="blank"> */}
                   <Image
                     height="40"
                     width="40"
@@ -134,10 +134,10 @@ const Footer = () => {
                     src="/images/IG.png"
                     alt="logo_img"
                   />
-                  </Link>
+                  {/* </Link> */}
                 </li>
                 <li className={styles["footer-links"]}>
-                  <Link href='https://www.youtube.com/@QiRahhaircare' target="blank">
+                  {/* <Link href='https://www.youtube.com/@QiRahhaircare' target="blank"> */}
                   <Image
                     height="40"
                     width="40"
@@ -145,7 +145,7 @@ const Footer = () => {
                     src="/images/YT.png"
                     alt="logo_img"
                   />
-                  </Link>
+                  {/* </Link> */}
                 </li>
                 {/* <li className={styles["footer-links"]}>
                   <Image
@@ -207,7 +207,7 @@ const Footer = () => {
         </Container>
       </section>
       {showWhatsapp && (
-      <Link href="https://wa.me/+918104583429" target="_blank" className="whatsapp-icon" aria-label="Chat with us on WhatsApp">
+      <Link href="https://wa.me/+919321406215" target="_blank" className="whatsapp-icon" aria-label="Chat with us on WhatsApp">
           <Image src='/images/whatsapp.png' width='45' height='20'/>
       </Link>
       )}

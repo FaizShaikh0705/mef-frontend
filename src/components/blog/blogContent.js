@@ -169,7 +169,7 @@ const blogContent = ({ blogData: initialBlogData }) => {
                                             <h5 className={styles['cardc']}>{item[1].postTopicName}</h5>
                                             {/* <hr className='my-4' /> */}
                                             <div className={styles['blogcontent-Card-info']}>
-                                                {parse(`${item[1].postLongDetail.substring(0, 100)}...`)}
+                                                {parse(`${item[1].postLongDetail.substring(0, 30)}...`)}
                                             </div>
                                             </div>
                                             <Link href={`/blog/${(item[1].sluginput).toLowerCase().split(" ").join("-")}`}>
