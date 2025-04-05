@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // const BASE_URL = "http://localhost:5002/api/";
-const BASE_URL = "http://13.203.105.156/api/";
+const BASE_URL = "https://api.mkmparfum.com/api/";
 // const TOKEN =
 //   JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user).currentUser
 //     .accessToken || "";
