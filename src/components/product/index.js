@@ -170,21 +170,14 @@ const Product = ({ productData: initialProductData }) => {
                           </span>
                         </Card.Text>
                         <InputGroup className=" justify-content-center">
-                          {item.stock ?
-                            (<Button
-                              className={styles["add-cart"]}
-                              variant="outline-dark"
-                              id="button-addon2" disabled>Sold Oud</Button>
-                            ) : (
-                              <Button
-                                onClick={() => addProductInCart(item, key)}
-                                className={styles["add-cart"]}
-                                variant="outline-dark"
-                                id="button-addon2"
-                              >
-                                ADD TO CART
-                              </Button>)
-                          }
+                          <Button
+                            onClick={() => addProductInCart(item, key)}
+                            className={styles["add-cart"]}
+                            variant="outline-dark"
+                            id="button-addon2"
+                          >
+                            ADD TO CART
+                          </Button>
                         </InputGroup>
                       </Card.Body>
                     </Card>
