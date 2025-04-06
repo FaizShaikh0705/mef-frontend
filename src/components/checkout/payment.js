@@ -225,13 +225,13 @@ const Payment = ({ className, onNext, onBack, }) => {
             >
               Pay Online
             </Button>
-            {/* <Button
+            <Button
               variant="outline-dark mx-2 mb-3"
               className={styles.paymentButton}
               onClick={() => CodOrder()}
             >
               COD (Cash On Delivery)
-            </Button> */}
+            </Button>
           </Col>
         </Row>
       </Container>

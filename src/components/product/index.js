@@ -27,6 +27,7 @@ const Product = ({ productData: initialProductData }) => {
   const [quantity, setQuantity] = useState(0);
   const dispatch = useDispatch();
 
+
   const handleVariantSelect = (productId, variant) => {
     setSelectedVariants((prevVariants) => ({
       ...prevVariants,
@@ -124,7 +125,7 @@ const Product = ({ productData: initialProductData }) => {
                 const firstImage =
                   item.postImage.length > 0 ? item.postImage[3] : "";
                 return (
-                  <Col lg={3} key={key} className=" col-6 pb-4">
+                  <Col lg={3} key={key} className="pb-4">
                     {/* <Link href={/product/${(item[1].postTopicName).toLowerCase().split(" ").join("-")}}> */}
                     <Card className={`${styles["product-card"]} h-100`}>
                       <Link
@@ -168,51 +169,22 @@ const Product = ({ productData: initialProductData }) => {
                             {item.discoutpercentage}% Off
                           </span>
                         </Card.Text>
-                        {/* <Card.Title>{item[1].postTopicName}</Card.Title>
-                                            <Card.Text>Rs. {item[1].postPriceName}.00</Card.Text> */}
                         <InputGroup className=" justify-content-center">
-                          {/* {item.postVariantName2 == "" ? "" :
-                            <DropdownButton
+                          {item.stock ?
+                            (<Button
+                              className={styles["add-cart"]}
                               variant="outline-dark"
-                              title={
-                                selectedVariants[key]
-                                  ? selectedVariants[key].variantName
-                                  : "50 ml"
-                              }
-                              id="input-group-dropdown-1"
-                            >
-                              <Dropdown.Item
-                                onClick={() =>
-                                  handleVariantSelect(key, {
-                                    title: item.postTopicName,
-                                    price: item.postPriceName,
-                                    variantName: item.postVariantName1,
-                                  })
-                                }
+                              id="button-addon2" disabled>Sold Oud</Button>
+                            ) : (
+                              <Button
+                                onClick={() => addProductInCart(item, key)}
+                                className={styles["add-cart"]}
+                                variant="outline-dark"
+                                id="button-addon2"
                               >
-                                {item.postVariantName1}
-                              </Dropdown.Item>
-                              <Dropdown.Item
-                                onClick={() =>
-                                  handleVariantSelect(key, {
-                                    title: item.postTopicName2,
-                                    price: item.postPriceName2,
-                                    variantName: item.postVariantName2,
-                                  })
-                                }
-                              >
-                                {item.postVariantName2}
-                              </Dropdown.Item>
-                            </DropdownButton>
-                          } */}
-                          <Button
-                            onClick={() => addProductInCart(item, key)}
-                            className={styles["add-cart"]}
-                            variant="outline-dark"
-                            id="button-addon2"
-                          >
-                            ADD TO CART
-                          </Button>
+                                ADD TO CART
+                              </Button>)
+                          }
                         </InputGroup>
                       </Card.Body>
                     </Card>
