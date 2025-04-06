@@ -211,7 +211,7 @@ const Footer = () => {
       </section>
       {showWhatsapp && (
       <Link href="https://wa.me/+919321406215" target="_blank" className="whatsapp-icon" aria-label="Chat with us on WhatsApp">
-          <Image src='/images/whatsapp.png' width='45' height='20'/>
+          <Image src='/images/whatsapp.png' width='45' height='20' unoptimized/>
       </Link>
       )}
       <ScrollToTop
