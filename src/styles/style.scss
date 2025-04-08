@@ -60,7 +60,7 @@ img {
   }
 
   #header11 {
-    padding: 0px 30px !important;
+    padding: 10px 20px 10px 30px !important;
   }
 }
 
@@ -475,5 +475,12 @@ p {
 
   &:hover {
     opacity: 0.8;
+  }
+}
+
+
+.navbar-brand {
+  @media(max-width:767px) {
+    margin-right: -50px !important
   }
 }

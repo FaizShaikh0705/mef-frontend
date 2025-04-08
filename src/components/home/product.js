@@ -133,7 +133,7 @@ const Product = ({ productData: initialProductData }) => {
                                     const firstImage =
                                         item.postImage.length > 0 ? item.postImage[3] : "";
                                     return (
-                                        <Col lg={3} key={key} className=" col-6 pb-4">
+                                        <Col lg={3} key={key} className="col-12 pb-4">
                                             {/* <Link href={/product/${(item[1].postTopicName).toLowerCase().split(" ").join("-")}}> */}
                                             <Card className={`${styles["product-card"]} h-100`}>
                                                 <Link

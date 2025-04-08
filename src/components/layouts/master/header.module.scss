@@ -2,13 +2,13 @@
     background-color: #fff;
     border-bottom: 3px solid #706C61 !important;
 
-    .nav-logo {
-        @media(max-width: 767px) {
-            width: 100px;
-            display: flex;
-            justify-content: center;
-        }
-    }
+    // .nav-logo {
+    //     @media(max-width: 767px) {
+    //         width: 100px;
+    //         display: flex;
+    //         justify-content: center;
+    //     }
+    // }
 
     .togg-btn {
         color: #706C61;
@@ -72,6 +72,7 @@
     border: 1px solid #E1F4F3 !important;
     border-radius: 5px !important;
 }
+
 
 // .form-control{
 //     border: 1px solid #E1F4F3 !important;
