@@ -7,11 +7,13 @@ import Ingredient from "./ingredient";
 import Benfits from "./benfits";
 import Testimony from "./testimony";
 import Reel from './reel';
+import Category from './category'
 
 const Home = ({ productData }) => {
   return (
     <>
       <HomeBanner />
+      <Category />
       <Intro />
       <Product productData={productData} />
       {/* <Offer /> */}

@@ -17,7 +17,7 @@ const ingredient = () => {
                         </div>
                         <Image
                             style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
-                            src="/images/category1.jpg"
+                            src="/images/flvr1.png"
                             width={250}
                             height={250}
                             objectFit='contain'
@@ -35,7 +35,7 @@ const ingredient = () => {
                         </div>
                         <Image
                             style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
-                            src="/images/category2.jpg"
+                            src="/images/flvr2.png"
                             width={250}
                             height={250}
                             objectFit='contain'
@@ -53,7 +53,7 @@ const ingredient = () => {
                         </div>
                         <Image
                             style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
-                            src="/images/category3.jpg"
+                            src="/images/flvr3.png"
                             width={250}
                             height={250}
                             objectFit='contain'
