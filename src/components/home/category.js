@@ -20,78 +20,186 @@ const category = () => {
                         600: { items: 2 },
                         1000: { items: 4 }
                     }}>
-                        <div  className={styles.ctgrybox}>
-                            <div style={{ border: '1px solid #000', zIndex: '1' }}>
-                                <div style={{ position: 'absolute', bottom: '1rem', left: '3rem' }}>
-                                    <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Fresh</h2>
-                                    <p>For Summer</p>
+                        <Link href={`/commingSoon`}>
+                            <div className={styles.ctgrybox}>
+                                <div style={{ border: '1px solid #000', zIndex: '1' }}>
+                                    <div style={{ position: 'absolute', bottom: '0.5rem', right: '3rem' }}>
+                                        <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Perfume</h2>
+                                        <p>For Summer</p>
+                                    </div>
+                                    <Image
+                                        style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
+                                        src="/images/banner3.jpg"
+                                        width={250}
+                                        height={250}
+                                        objectFit='contain'
+                                        layout='responsive'
+                                        alt='category'
+                                        unoptimized
+                                    />
                                 </div>
-                                <Image
-                                    style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
-                                    src="/images/flvr1.png"
-                                    width={250}
-                                    height={250}
-                                    objectFit='contain'
-                                    layout='responsive'
-                                    alt='category'
-                                    unoptimized
-                                />
                             </div>
-                        </div>
-                        <div  className={styles.ctgrybox}>
-                            <div style={{ border: '1px solid #000', zIndex: '1' }}>
-                                <div style={{ position: 'absolute', bottom: '1rem', left: '3rem' }}>
-                                    <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Woody</h2>
-                                    <p>For Winter</p>
+                        </Link>
+                        <Link href={`/commingSoon`}>
+                            <div className={styles.ctgrybox}>
+                                <div style={{ border: '1px solid #000', zIndex: '1' }}>
+                                    <div style={{ position: 'absolute', bottom: '0.5rem', right: '3rem' }}>
+                                        <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Solid Perfume</h2>
+                                        <p>For Winter</p>
+                                    </div>
+                                    <Image
+                                        style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
+                                        src="/images/banner3.jpg"
+                                        width={250}
+                                        height={250}
+                                        objectFit='contain'
+                                        layout='responsive'
+                                        alt='category'
+                                        unoptimized
+                                    />
                                 </div>
-                                <Image
-                                    style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
-                                    src="/images/flvr2.png"
-                                    width={250}
-                                    height={250}
-                                    objectFit='contain'
-                                    layout='responsive'
-                                    alt='category'
-                                    unoptimized
-                                />
                             </div>
-                        </div>
-                        <div  className={styles.ctgrybox}>
-                            <div style={{ border: '1px solid #000', zIndex: '1' }}>
-                                <div style={{ position: 'absolute', bottom: '1rem', left: '3rem' }}>
-                                    <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Floral</h2>
-                                    <p>For All Season</p>
+                        </Link>
+                        <Link href={`/commingSoon`}>
+                            <div className={styles.ctgrybox}>
+                                <div style={{ border: '1px solid #000', zIndex: '1' }}>
+                                    <div style={{ position: 'absolute', bottom: '0.5rem', right: '3rem' }}>
+                                        <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Body Mist</h2>
+                                        <p>For All Season</p>
+                                    </div>
+                                    <Image
+                                        style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
+                                        src="/images/banner3.jpg"
+                                        width={250}
+                                        height={250}
+                                        objectFit='contain'
+                                        layout='responsive'
+                                        alt='category'
+                                        unoptimized
+                                    />
                                 </div>
-                                <Image
-                                    style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
-                                    src="/images/flvr3.png"
-                                    width={250}
-                                    height={250}
-                                    objectFit='contain'
-                                    layout='responsive'
-                                    alt='category'
-                                    unoptimized
-                                />
                             </div>
-                        </div>
-                        <div  className={styles.ctgrybox}>
-                            <div style={{ border: '1px solid #000', zIndex: '1' }}>
-                                <div style={{ position: 'absolute', bottom: '1rem', left: '3rem' }}>
-                                    <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Floral</h2>
-                                    <p>For All Season</p>
+                        </Link>
+                        <Link href={`/commingSoon`}>
+                            <div className={styles.ctgrybox}>
+                                <div style={{ border: '1px solid #000', zIndex: '1' }}>
+                                    <div style={{ position: 'absolute', bottom: '0.5rem', right: '3rem' }}>
+                                        <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Car Perfume</h2>
+                                        <p>For All Season</p>
+                                    </div>
+                                    <Image
+                                        style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
+                                        src="/images/banner3.jpg"
+                                        width={250}
+                                        height={250}
+                                        objectFit='contain'
+                                        layout='responsive'
+                                        alt='category'
+                                        unoptimized
+                                    />
                                 </div>
-                                <Image
-                                    style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
-                                    src="/images/flvr3.png"
-                                    width={250}
-                                    height={250}
-                                    objectFit='contain'
-                                    layout='responsive'
-                                    alt='category'
-                                    unoptimized
-                                />
                             </div>
-                        </div>
+                        </Link>
+                        <Link href={`/commingSoon`}>
+                            <div className={styles.ctgrybox}>
+                                <div style={{ border: '1px solid #000', zIndex: '1' }}>
+                                    <div style={{ position: 'absolute', bottom: '0.5rem', right: '3rem' }}>
+                                        <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>beard balm</h2>
+                                        <p>For All Season</p>
+                                    </div>
+                                    <Image
+                                        style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
+                                        src="/images/banner3.jpg"
+                                        width={250}
+                                        height={250}
+                                        objectFit='contain'
+                                        layout='responsive'
+                                        alt='category'
+                                        unoptimized
+                                    />
+                                </div>
+                            </div>
+                        </Link>
+                        <Link href={`/commingSoon`}>
+                            <div className={styles.ctgrybox}>
+                                <div style={{ border: '1px solid #000', zIndex: '1' }}>
+                                    <div style={{ position: 'absolute', bottom: '0.5rem', right: '3rem' }}>
+                                        <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Candle</h2>
+                                        <p>For All Season</p>
+                                    </div>
+                                    <Image
+                                        style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
+                                        src="/images/banner3.jpg"
+                                        width={250}
+                                        height={250}
+                                        objectFit='contain'
+                                        layout='responsive'
+                                        alt='category'
+                                        unoptimized
+                                    />
+                                </div>
+                            </div>
+                        </Link>
+                        <Link href={`/commingSoon`}>
+                            <div className={styles.ctgrybox}>
+                                <div style={{ border: '1px solid #000', zIndex: '1' }}>
+                                    <div style={{ position: 'absolute', bottom: '0.5rem', right: '3rem' }}>
+                                        <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Roll on</h2>
+                                        <p>For All Season</p>
+                                    </div>
+                                    <Image
+                                        style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
+                                        src="/images/banner3.jpg"
+                                        width={250}
+                                        height={250}
+                                        objectFit='contain'
+                                        layout='responsive'
+                                        alt='category'
+                                        unoptimized
+                                    />
+                                </div>
+                            </div>
+                        </Link>
+                        <Link href={`/commingSoon`}>
+                            <div className={styles.ctgrybox}>
+                                <div style={{ border: '1px solid #000', zIndex: '1' }}>
+                                    <div style={{ position: 'absolute', bottom: '0.5rem', right: '3rem' }}>
+                                        <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Gift Hamper</h2>
+                                        <p>For All Season</p>
+                                    </div>
+                                    <Image
+                                        style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
+                                        src="/images/banner3.jpg"
+                                        width={250}
+                                        height={250}
+                                        objectFit='contain'
+                                        layout='responsive'
+                                        alt='category'
+                                        unoptimized
+                                    />
+                                </div>
+                            </div>
+                        </Link>
+                        <Link href={`/commingSoon`}>
+                            <div className={styles.ctgrybox}>
+                                <div style={{ border: '1px solid #000', zIndex: '1' }}>
+                                    <div style={{ position: 'absolute', bottom: '0.5rem', right: '3rem' }}>
+                                        <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Discovery Set</h2>
+                                        <p>For All Season</p>
+                                    </div>
+                                    <Image
+                                        style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
+                                        src="/images/banner3.jpg"
+                                        width={250}
+                                        height={250}
+                                        objectFit='contain'
+                                        layout='responsive'
+                                        alt='category'
+                                        unoptimized
+                                    />
+                                </div>
+                            </div>
+                        </Link>
                     </OwlCarousel>
                 </Row>
             </Container>
