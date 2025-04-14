@@ -43,6 +43,7 @@ const intro = () => {
               objectFit="contain"
               src="/images/about22.webp"
               alt="logo_img"
+              unoptimized
             />
           </Col>
         </Row>

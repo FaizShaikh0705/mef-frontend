@@ -15,7 +15,7 @@ const category = () => {
         <>
             <Container fluid>
                 <Row className='my-5'>
-                    <OwlCarousel className="owl-theme" loop margin={10} nav responsive={{
+                    <OwlCarousel className="owl-theme" loop margin={10} nav={false} responsive={{
                         0: { items: 1 },
                         600: { items: 2 },
                         1000: { items: 4 }
@@ -28,7 +28,7 @@ const category = () => {
                                         <p>For Summer</p>
                                     </div>
                                     <Image
-                                        style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
+                                        // style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
                                         src="/images/banner3.jpg"
                                         width={250}
                                         height={250}
@@ -48,7 +48,7 @@ const category = () => {
                                         <p>For Winter</p>
                                     </div>
                                     <Image
-                                        style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
+                                        // style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
                                         src="/images/banner3.jpg"
                                         width={250}
                                         height={250}
@@ -68,7 +68,7 @@ const category = () => {
                                         <p>For All Season</p>
                                     </div>
                                     <Image
-                                        style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
+                                        // style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
                                         src="/images/banner3.jpg"
                                         width={250}
                                         height={250}
@@ -88,7 +88,7 @@ const category = () => {
                                         <p>For All Season</p>
                                     </div>
                                     <Image
-                                        style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
+                                        // style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
                                         src="/images/banner3.jpg"
                                         width={250}
                                         height={250}
@@ -108,7 +108,7 @@ const category = () => {
                                         <p>For All Season</p>
                                     </div>
                                     <Image
-                                        style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
+                                        // style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
                                         src="/images/banner3.jpg"
                                         width={250}
                                         height={250}
@@ -128,7 +128,7 @@ const category = () => {
                                         <p>For All Season</p>
                                     </div>
                                     <Image
-                                        style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
+                                        // style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
                                         src="/images/banner3.jpg"
                                         width={250}
                                         height={250}
@@ -148,7 +148,7 @@ const category = () => {
                                         <p>For All Season</p>
                                     </div>
                                     <Image
-                                        style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
+                                        // style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
                                         src="/images/banner3.jpg"
                                         width={250}
                                         height={250}
@@ -168,7 +168,7 @@ const category = () => {
                                         <p>For All Season</p>
                                     </div>
                                     <Image
-                                        style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
+                                        // style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
                                         src="/images/banner3.jpg"
                                         width={250}
                                         height={250}
@@ -188,7 +188,7 @@ const category = () => {
                                         <p>For All Season</p>
                                     </div>
                                     <Image
-                                        style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
+                                        // style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
                                         src="/images/banner3.jpg"
                                         width={250}
                                         height={250}
