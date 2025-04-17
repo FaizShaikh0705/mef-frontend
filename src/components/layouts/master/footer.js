@@ -8,7 +8,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import ScrollToTop from "react-scroll-to-top";
-import { FaLocationDot, FaPhone, FaSquareInstagram } from "react-icons/fa6";
+import { FaLocationDot, FaPhone, FaSquareInstagram, FaSquareFacebook, FaSquareYoutube, FaSquareWhatsapp } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 import styles from "./footer.module.scss";
 
@@ -81,73 +81,76 @@ const Footer = () => {
             <div className="col-lg-3">
               <h3 className="mb-4">Contact Details</h3>
               <Link href='tel:+919321406215'>
-              <p className="mb-3">
-                <strong>
-                  <span style={{ color: "#706C61" }}>
-                    <FaPhone />
-                  </span>
-                  &nbsp; +91 9321406215
-                </strong>
-              </p>
+                <p className="mb-3">
+                  <strong>
+                    <span style={{ color: "#706C61" }}>
+                      <FaPhone />
+                    </span>
+                    &nbsp; +91 9321406215
+                  </strong>
+                </p>
               </Link>
               <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=info@mkmparfum.com.in&su=SUBJECT&body=BODY" target="blank">
-              <p className="mb-3">
-                <strong>
-                  <span style={{ color: "#706C61" }}>
-                    <IoMail />
-                  </span>
-                  &nbsp; info@mkmparfum.com
-                </strong>
-              </p>
+                <p className="mb-3">
+                  <strong>
+                    <span style={{ color: "#706C61" }}>
+                      <IoMail />
+                    </span>
+                    &nbsp; info@mkmparfum.com
+                  </strong>
+                </p>
               </Link>
               <Link href='https://www.instagram.com/qirah_oil?igsh=MWthamJtb2JscGNldA%3D%3D&utm_source=qr ' target="blank">
-              <p className="mb-3">
-                <strong>
-                  <span style={{ color: "#706C61" }}>
-                    <FaSquareInstagram />
-                  </span>
-                  &nbsp; mkmparfum
-                </strong>
-              </p>
+                <p className="mb-3">
+                  <strong>
+                    <span style={{ color: "#706C61" }}>
+                      <FaSquareInstagram />
+                    </span>
+                    &nbsp; mkmparfum
+                  </strong>
+                </p>
               </Link>
             </div>
             <div className="col-lg-3">
-            <h3 className="mb-4">Social Links</h3>
+              <h3 className="mb-4">Social Links</h3>
               <ul className="d-flex" style={{ listStyle: "none" }}>
                 <li className={styles["footer-links"]}>
                   {/* <Link href='https://www.facebook.com/qirah.hair.care?mibextid=LQQJ4d' target="blank"> */}
-                  <Image
+                  {/* <Image
                     height="40"
                     width="40"
                     objectFit="contain"
                     src="/images/FB.png"
                     alt="logo_img"
                     unoptimized
-                  />
+                  /> */}
+                  <FaSquareFacebook size={40} />
                   {/* </Link> */}
                 </li>
                 <li className={styles["footer-links"]}>
                   {/* <Link href='https://www.instagram.com/qirah_oil?igsh=MWthamJtb2JscGNldA%3D%3D&utm_source=qr ' target="blank"> */}
-                  <Image
+                  {/* <Image
                     height="40"
                     width="40"
                     objectFit="contain"
                     src="/images/IG.png"
                     alt="logo_img"
                     unoptimized
-                  />
+                  /> */}
+                  <FaSquareInstagram size={40} />
                   {/* </Link> */}
                 </li>
                 <li className={styles["footer-links"]}>
                   {/* <Link href='https://www.youtube.com/@QiRahhaircare' target="blank"> */}
-                  <Image
+                  {/* <Image
                     height="40"
                     width="40"
                     objectFit="contain"
                     src="/images/YT.png"
                     alt="logo_img"
                     unoptimized
-                  />
+                  /> */}
+                  <FaSquareYoutube size={40} />
                   {/* </Link> */}
                 </li>
                 {/* <li className={styles["footer-links"]}>
@@ -210,16 +213,19 @@ const Footer = () => {
         </Container>
       </section>
       {showWhatsapp && (
-      <Link href="https://wa.me/+919321406215" target="_blank" className="whatsapp-icon" aria-label="Chat with us on WhatsApp">
-          <Image src='/images/whatsapp.png' width='45' height='20' unoptimized/>
-      </Link>
+        <Link href="https://wa.me/+919321406215" target="_blank" className="whatsapp-icon" aria-label="Chat with us on WhatsApp">
+          {/* <Image src='/images/whatsapp.png' width='45' height='20' unoptimized /> */}
+          <FaSquareWhatsapp size={40} />
+        </Link>
       )}
       <ScrollToTop
         smooth
         color="#706C61"
         height="20"
-        style={{ backgroundColor: "#E1F4F3",
-                 border:"2px solid #706C61" }}
+        style={{
+          backgroundColor: "#E1F4F3",
+          border: "2px solid #706C61"
+        }}
       />
     </>
   );

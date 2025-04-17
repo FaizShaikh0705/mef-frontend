@@ -15,11 +15,14 @@ const category = () => {
         <>
             <Container fluid>
                 <Row className='my-5'>
-                    <OwlCarousel className="owl-theme" loop margin={10} nav={false} responsive={{
-                        0: { items: 1 },
-                        600: { items: 2 },
-                        1000: { items: 4 }
-                    }}>
+                    <OwlCarousel className="owl-theme" loop margin={10} nav={false} dots={false} autoplay={true} // Enables auto-slide
+                        autoplayTimeout={3000} // Delay between slides
+                        autoplaySpeed={1000} // Transition speed
+                        responsive={{
+                            0: { items: 1 },
+                            600: { items: 2 },
+                            1000: { items: 4 }
+                        }}>
                         <Link href={`/commingSoon`}>
                             <div className={styles.ctgrybox}>
                                 <div style={{ border: '1px solid #000', zIndex: '1' }}>
