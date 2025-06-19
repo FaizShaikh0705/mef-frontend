@@ -10,7 +10,7 @@ const intro = () => {
     <section className={`${styles["intro-main"]} my-4`} id="about">
       <Container>
         <Row>
-          <Col lg={6}>
+          <Col lg={6} className="mt-4">
             <h2>Use It To Believe It</h2>
             <h3>MKM Parfum - A Symphony of Fragrance</h3>
             <br />
@@ -41,7 +41,7 @@ const intro = () => {
               height="700"
               width="600"
               objectFit="contain"
-              src="/images/about22.webp"
+              src="/images/extract.jpg"
               alt="logo_img"
               unoptimized
             />

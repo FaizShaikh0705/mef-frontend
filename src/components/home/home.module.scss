@@ -390,6 +390,7 @@
   position: relative;
   padding-right: 1rem;
   padding-left: 1rem;
+  color: #fff !important;
 
   @media (max-width: 767px) {
     margin-bottom: 2rem;
@@ -413,5 +414,23 @@
 
   @media (max-width: 767px) {
     font-size: 10px;
+  }
+}
+
+
+.rbtn {
+  color: #706C61;
+}
+
+.rbtn1{
+  color: #000;
+text-decoration: none;
+}
+
+.menc {
+  height: 79.2% !important;
+
+  @media (max-width: 767px) {
+    height: auto !important;
   }
 }

@@ -3,8 +3,10 @@ import MasterLayout from '../src/components/layouts/master';
 import SeoSchema from "../src/components/seo/schema";
 import HomeContainer from "../src/components/home";
 import axios from 'axios';
+import { publicRequest } from "../src/requestMethods";
 
-const Home = ({ programData, testimonialData }) => {
+
+const Home = ({ programData, testimonialData, blogData, productData }) => {
 
     let schemaData = {
         "@context": "https://schema.org",
@@ -26,7 +28,7 @@ const Home = ({ programData, testimonialData }) => {
         <>
             <NextSeo title="MKM PARFUM" description="MKM PARFUM" canonical="/" />
             {/* <SeoSchema data={schemaData} /> */}
-            <HomeContainer />
+            <HomeContainer productData={productData} blogData={blogData} />
         </>
     )
 }
@@ -63,3 +65,20 @@ export default Home;
 //     },
 //   };
 // }
+
+
+export async function getStaticProps() {
+    const bres = await publicRequest.get("/blog");
+    const blogData = await bres.data;
+
+    const res = await publicRequest.get("/products");
+    const productData = res.data;
+
+
+    return {
+        props: {
+            blogData,
+            productData,
+        },
+    };
+};

@@ -49,6 +49,13 @@ const Contact = () => {
             <Col lg={12}>
               <div className={styles['content']}>
                 <h2>Contact Us</h2>
+                <p>
+                  <span>
+                    <Link href="/">Home</Link>
+                  </span>{" "}
+                  <span>/</span>
+                  <span> Contact Us</span>
+                </p>
               </div>
             </Col>
           </Row>
@@ -148,9 +155,9 @@ const Contact = () => {
               {/* <p><strong><span style={{ color: '#706C61' }}><FaLocationDot /></span>&nbsp; Address</strong></p>
               <p>Heena Style Affairs<br />AR 26, A Wing, Nootan Nagar CHS,<br /> Near Bandra Station,<br />Opp. Sahakari Bhandar,<br />Bandra West,<br />Mumbai-400050</p> */}
               <p className='mt-3'><strong><span style={{ color: '#706C61' }}><FaPhone /></span>&nbsp; Get in Touch</strong></p>
-              <Link href='tel:+919321406215'><p>+91 9321406215</p></Link>
+              <Link href='tel:+919321406215'><p>+91 7738896215</p></Link>
               <p className='mt-3'><strong><span style={{ color: '#706C61' }}><IoMail /></span>&nbsp; Email address</strong></p>
-              <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=info@mkmparfum.com.in&su=SUBJECT&body=BODY" target="blank"><p>info@mkmparfum.com</p></Link>
+              <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=mkmparfum@gmail.com.in&su=SUBJECT&body=BODY" target="blank"><p>mkmparfum@gmail.com</p></Link>
               <p className='mt-3'><strong><span style={{ color: '#706C61' }}><FaSquareInstagram /></span>&nbsp; Instagram ID</strong></p>
               <Link href='https://www.instagram.com/qirah_oil?igsh=MWthamJtb2JscGNldA%3D%3D&utm_source=qr ' target="blank"><p>mkmparfum</p></Link>
 

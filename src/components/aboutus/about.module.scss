@@ -1,5 +1,5 @@
 .about-head {
-    margin-top: 30px;
+    margin-top: 78px;
 
     @media(max-width: 767px) {
         margin-top: 23px;
@@ -10,9 +10,18 @@
     background-size: cover;
 
     .content {
-        padding: 80px 0px;
+        padding: 60px 0px;
         color: #706C61;
         text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: #706C61;
+    }
+
+    p {
+        color: #706C61;
     }
 }
 

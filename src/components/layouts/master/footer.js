@@ -1,4 +1,4 @@
-import { Container, Row, Col, Stack } from "react-bootstrap";
+import { Container, Row, Col, Stack, Accordion } from "react-bootstrap";
 import React, { useEffect, useState } from "react";
 // import AiOutlinePhone from "react-icons/ai"
 import Image from "next/image";
@@ -41,7 +41,7 @@ const Footer = () => {
       >
         <Container>
           <Row>
-            <div className="col-lg-3 col-sm-6"  >
+            <div className="d-none d-lg-block col-lg-3 col-sm-6"  >
               <h3 className="mb-4">Quick Links</h3>
               <ul className={styles["info-list"]}>
                 <li>
@@ -61,7 +61,34 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className=" col-lg-3 col-sm-6" >
+            <div className="d-lg-none col-lg-3 col-sm-6"  >
+              <Accordion defaultActiveKey="0">
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header>Quick Links</Accordion.Header>
+                  <Accordion.Body>
+                    <ul className={styles["info-list"]}>
+                      <li>
+                        <Link href="/#">Home</Link>
+                      </li>
+                      <li>
+                        <Link href="/aboutus">About</Link>
+                      </li>
+                      <li>
+                        <Link href="/#shop">Shop</Link>
+                      </li>
+                      <li>
+                        <Link href="/blog">Blog</Link>
+                      </li>
+                      <li>
+                        <Link href="/contact">Contact</Link>
+                      </li>
+                    </ul>
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+
+            </div>
+            <div className="d-none d-lg-block col-lg-3 col-sm-6" >
               <h3 className="mb-4">Support</h3>
               <ul className={styles["info-list"]}>
                 <li>
@@ -78,7 +105,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="col-lg-3">
+            <div className="d-none d-lg-block col-lg-3">
               <h3 className="mb-4">Contact Details</h3>
               <Link href='tel:+919321406215'>
                 <p className="mb-3">
@@ -86,21 +113,21 @@ const Footer = () => {
                     <span style={{ color: "#706C61" }}>
                       <FaPhone />
                     </span>
-                    &nbsp; +91 9321406215
+                    &nbsp; +91 7738896215
                   </strong>
                 </p>
               </Link>
-              <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=info@mkmparfum.com.in&su=SUBJECT&body=BODY" target="blank">
+              <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=mkmparfum@gmail.com.in&su=SUBJECT&body=BODY" target="blank">
                 <p className="mb-3">
                   <strong>
                     <span style={{ color: "#706C61" }}>
                       <IoMail />
                     </span>
-                    &nbsp; info@mkmparfum.com
+                    &nbsp; mkmparfum@gmail.com
                   </strong>
                 </p>
               </Link>
-              <Link href='https://www.instagram.com/qirah_oil?igsh=MWthamJtb2JscGNldA%3D%3D&utm_source=qr ' target="blank">
+              <Link href='https://www.instagram.com/mkmparfum?igsh=eTJ2OGIzeW04c245' target="blank">
                 <p className="mb-3">
                   <strong>
                     <span style={{ color: "#706C61" }}>
@@ -111,12 +138,12 @@ const Footer = () => {
                 </p>
               </Link>
             </div>
-            <div className="col-lg-3">
+            <div className="d-none d-lg-block col-lg-3">
               <h3 className="mb-4">Social Links</h3>
               <ul className="d-flex" style={{ listStyle: "none" }}>
                 <li className={styles["footer-links"]}>
-                  {/* <Link href='https://www.facebook.com/qirah.hair.care?mibextid=LQQJ4d' target="blank"> */}
-                  {/* <Image
+                  <Link href='https://www.facebook.com/share/1J3XV5wR3T/' target="blank">
+                    {/* <Image
                     height="40"
                     width="40"
                     objectFit="contain"
@@ -124,12 +151,12 @@ const Footer = () => {
                     alt="logo_img"
                     unoptimized
                   /> */}
-                  <FaSquareFacebook size={40} />
-                  {/* </Link> */}
+                    <FaSquareFacebook size={40} />
+                  </Link>
                 </li>
                 <li className={styles["footer-links"]}>
-                  {/* <Link href='https://www.instagram.com/qirah_oil?igsh=MWthamJtb2JscGNldA%3D%3D&utm_source=qr ' target="blank"> */}
-                  {/* <Image
+                  <Link href='https://www.instagram.com/mkmparfum?igsh=eTJ2OGIzeW04c245' target="blank">
+                    {/* <Image
                     height="40"
                     width="40"
                     objectFit="contain"
@@ -137,8 +164,8 @@ const Footer = () => {
                     alt="logo_img"
                     unoptimized
                   /> */}
-                  <FaSquareInstagram size={40} />
-                  {/* </Link> */}
+                    <FaSquareInstagram size={40} />
+                  </Link>
                 </li>
                 <li className={styles["footer-links"]}>
                   {/* <Link href='https://www.youtube.com/@QiRahhaircare' target="blank"> */}

@@ -15,7 +15,11 @@ const category = () => {
         <>
             <Container fluid>
                 <Row className='my-5'>
-                    <OwlCarousel className="owl-theme" loop margin={10} nav={false} dots={false} autoplay={true} // Enables auto-slide
+                    <OwlCarousel className="owl-theme"
+                        loop margin={10}
+                        nav={false} 
+                        dots={false}
+                        autoplay={true} // Enables auto-slide
                         autoplayTimeout={3000} // Delay between slides
                         autoplaySpeed={1000} // Transition speed
                         responsive={{
@@ -32,7 +36,7 @@ const category = () => {
                                     </div>
                                     <Image
                                         // style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
-                                        src="/images/banner3.jpg"
+                                        src="/images/category/perfume.jpg"
                                         width={250}
                                         height={250}
                                         objectFit='contain'
@@ -52,7 +56,7 @@ const category = () => {
                                     </div>
                                     <Image
                                         // style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
-                                        src="/images/banner3.jpg"
+                                        src="/images/category/solid.jpg"
                                         width={250}
                                         height={250}
                                         objectFit='contain'
@@ -67,12 +71,12 @@ const category = () => {
                             <div className={styles.ctgrybox}>
                                 <div style={{ border: '1px solid #000', zIndex: '1' }}>
                                     <div style={{ position: 'absolute', bottom: '0.5rem', right: '3rem' }}>
-                                        <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Body Mist</h2>
+                                        <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Bakhoor</h2>
                                         <p>For All Season</p>
                                     </div>
                                     <Image
                                         // style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
-                                        src="/images/banner3.jpg"
+                                        src="/images/category/bakhoor.jpg"
                                         width={250}
                                         height={250}
                                         objectFit='contain'
@@ -92,7 +96,7 @@ const category = () => {
                                     </div>
                                     <Image
                                         // style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
-                                        src="/images/banner3.jpg"
+                                        src="/images/category/car.jpg"
                                         width={250}
                                         height={250}
                                         objectFit='contain'
@@ -112,7 +116,7 @@ const category = () => {
                                     </div>
                                     <Image
                                         // style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
-                                        src="/images/banner3.jpg"
+                                        src="/images/category/beard.jpg"
                                         width={250}
                                         height={250}
                                         objectFit='contain'
@@ -132,7 +136,7 @@ const category = () => {
                                     </div>
                                     <Image
                                         // style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
-                                        src="/images/banner3.jpg"
+                                        src="/images/category/candle.jpg"
                                         width={250}
                                         height={250}
                                         objectFit='contain'
@@ -152,7 +156,7 @@ const category = () => {
                                     </div>
                                     <Image
                                         // style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
-                                        src="/images/banner3.jpg"
+                                        src="/images/category/rollon.jpg"
                                         width={250}
                                         height={250}
                                         objectFit='contain'
@@ -163,7 +167,7 @@ const category = () => {
                                 </div>
                             </div>
                         </Link>
-                        <Link href={`/commingSoon`}>
+                        {/* <Link href={`/commingSoon`}>
                             <div className={styles.ctgrybox}>
                                 <div style={{ border: '1px solid #000', zIndex: '1' }}>
                                     <div style={{ position: 'absolute', bottom: '0.5rem', right: '3rem' }}>
@@ -202,7 +206,7 @@ const category = () => {
                                     />
                                 </div>
                             </div>
-                        </Link>
+                        </Link> */}
                     </OwlCarousel>
                 </Row>
             </Container>

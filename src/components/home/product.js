@@ -120,7 +120,7 @@ const Product = ({ productData: initialProductData }) => {
                 <Row className=" text-center">
                     <h3 style={{ color: "#706C61" }} className="">Our Popular Products</h3>
                     <h2 style={{ color: "#706C61" }} className="mb-4">Best Sellers</h2>
-                    <OwlCarousel className="owl-theme" loop margin={10} nav responsive={{
+                    <OwlCarousel className="owl-theme" loop margin={10} nav dots={false} responsive={{
                         0: { items: 1 },
                         600: { items: 2 },
                         1000: { items: 4 }
