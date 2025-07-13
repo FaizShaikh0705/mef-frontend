@@ -11,10 +11,10 @@ const ingredient = () => {
             <Row className='my-5'>
                 <Col xs={12} md={4} className={styles.ctgrybox}>
                     <div style={{ border: '1px solid #000', zIndex: '1' }}>
-                        <div style={{ position: 'absolute', bottom: '1rem', right: '3rem' }}>
+                        {/* <div style={{ position: 'absolute', bottom: '1rem', right: '3rem' }}>
                             <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Fresh</h2>
                             <p>For Summer</p>
-                        </div>
+                        </div> */}
                         <Image
                             style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
                             src="/images/flvr1.png"
@@ -29,10 +29,10 @@ const ingredient = () => {
                 </Col>
                 <Col xs={12} md={4} className={styles.ctgrybox}>
                     <div style={{ border: '1px solid #000', zIndex: '1' }}>
-                        <div style={{ position: 'absolute', bottom: '1rem', right: '3rem' }}>
+                        {/* <div style={{ position: 'absolute', bottom: '1rem', right: '3rem' }}>
                             <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Woody</h2>
                             <p>For Winter</p>
-                        </div>
+                        </div> */}
                         <Image
                             style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
                             src="/images/flvr2.png"
@@ -47,10 +47,10 @@ const ingredient = () => {
                 </Col>
                 <Col xs={12} md={4} className={styles.ctgrybox}>
                     <div style={{ border: '1px solid #000', zIndex: '1' }}>
-                        <div style={{ position: 'absolute', bottom: '1rem', right: '3rem' }}>
+                        {/* <div style={{ position: 'absolute', bottom: '1rem', right: '3rem' }}>
                             <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Floral</h2>
                             <p>For All Season</p>
-                        </div>
+                        </div> */}
                         <Image
                             style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
                             src="/images/flvr3.png"

@@ -7,7 +7,8 @@ import $ from "jquery";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
-import ScrollToTop from "react-scroll-to-top";
+// import ScrollToTop from "react-scroll-to-top";
+import { FaInstagram, FaYoutube, FaPinterest, FaFacebook } from 'react-icons/fa';
 import { FaLocationDot, FaPhone, FaSquareInstagram, FaSquareFacebook, FaSquareYoutube, FaSquareWhatsapp } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 import styles from "./footer.module.scss";
@@ -36,10 +37,10 @@ const Footer = () => {
   return (
     <>
       <section
-        className="foot bg-light bg-border-btm bg-border-top py-4"
+        className="foot bg-dark bg-border-btm bg-border-top py-4"
         id={styles["footer"]}
       >
-        <Container>
+        {/* <Container>
           <Row>
             <div className="d-none d-lg-block col-lg-3 col-sm-6"  >
               <h3 className="mb-4">Quick Links</h3>
@@ -110,7 +111,7 @@ const Footer = () => {
               <Link href='tel:+919321406215'>
                 <p className="mb-3">
                   <strong>
-                    <span style={{ color: "#706C61" }}>
+                    <span style={{ color: "#fff" }}>
                       <FaPhone />
                     </span>
                     &nbsp; +91 7738896215
@@ -120,7 +121,7 @@ const Footer = () => {
               <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=mkmparfum@gmail.com.in&su=SUBJECT&body=BODY" target="blank">
                 <p className="mb-3">
                   <strong>
-                    <span style={{ color: "#706C61" }}>
+                    <span style={{ color: "#fff" }}>
                       <IoMail />
                     </span>
                     &nbsp; mkmparfum@gmail.com
@@ -130,7 +131,7 @@ const Footer = () => {
               <Link href='https://www.instagram.com/mkmparfum?igsh=eTJ2OGIzeW04c245' target="blank">
                 <p className="mb-3">
                   <strong>
-                    <span style={{ color: "#706C61" }}>
+                    <span style={{ color: "#fff" }}>
                       <FaSquareInstagram />
                     </span>
                     &nbsp; mkmparfum
@@ -143,81 +144,89 @@ const Footer = () => {
               <ul className="d-flex" style={{ listStyle: "none" }}>
                 <li className={styles["footer-links"]}>
                   <Link href='https://www.facebook.com/share/1J3XV5wR3T/' target="blank">
-                    {/* <Image
-                    height="40"
-                    width="40"
-                    objectFit="contain"
-                    src="/images/FB.png"
-                    alt="logo_img"
-                    unoptimized
-                  /> */}
                     <FaSquareFacebook size={40} />
                   </Link>
                 </li>
                 <li className={styles["footer-links"]}>
                   <Link href='https://www.instagram.com/mkmparfum?igsh=eTJ2OGIzeW04c245' target="blank">
-                    {/* <Image
-                    height="40"
-                    width="40"
-                    objectFit="contain"
-                    src="/images/IG.png"
-                    alt="logo_img"
-                    unoptimized
-                  /> */}
                     <FaSquareInstagram size={40} />
                   </Link>
                 </li>
                 <li className={styles["footer-links"]}>
-                  {/* <Link href='https://www.youtube.com/@QiRahhaircare' target="blank"> */}
-                  {/* <Image
-                    height="40"
-                    width="40"
-                    objectFit="contain"
-                    src="/images/YT.png"
-                    alt="logo_img"
-                    unoptimized
-                  /> */}
                   <FaSquareYoutube size={40} />
-                  {/* </Link> */}
                 </li>
-                {/* <li className={styles["footer-links"]}>
-                  <Image
-                    height="40"
-                    width="40"
-                    objectFit="contain"
-                    src="/images/linkedin.png"
-                    alt="logo_img"
-                  />
-                </li>
-                <li className={styles["footer-links"]}>
-                  <Image
-                    height="40"
-                    width="40"
-                    objectFit="contain"
-                    src="/images/twitter.png"
-                    alt="logo_img"
-                  />
-                </li> */}
               </ul>
-              {/* <p>
-                <strong>
-                  <span style={{ color: "#706C61" }}>
-                    <FaLocationDot />
-                  </span>
-                  &nbsp; Address
-                </strong>
-              </p>
-              <p>
-              Heena Style Affairs, AR 26, A Wing, Nootan Nagar CHS, Near Bandra Station, Opp. Sahakari Bhandar, Bandra west, Mumbai 400050
-              </p> */}
             </div>
           </Row>
+        </Container> */}
+
+
+        <Container>
+          <Row className="mb-4">
+            <Col md={3} sm={6} className="mb-4">
+              <h5 className="fw-bold">About MKM</h5>
+              <ul className="list-unstyled mt-3">
+                <li><a href="/aboutus" className="text-white text-decoration-none">Our Story</a></li>
+                <li><a href="#" className="text-white text-decoration-none">Ingredients & Ethics</a></li>
+                <li><a href="#" className="text-white text-decoration-none">Sustainability</a></li>
+              </ul>
+            </Col>
+
+            <Col md={3} sm={6} className="mb-4">
+              <h5 className="fw-bold">Customer Care</h5>
+              <ul className="list-unstyled mt-3">
+                <li><a href="/contact" className="text-white text-decoration-none">Contact Us</a></li>
+                <li><a href="#" className="text-white text-decoration-none">FAQ</a></li>
+                <li><a href="/shipping" className="text-white text-decoration-none">Shipping & Returns</a></li>
+                <li><a href="/privacy" className="text-white text-decoration-none">Privacy Policy</a></li>
+              </ul>
+            </Col>
+
+            <Col md={3} sm={6} className="mb-4">
+              <h5 className="fw-bold">Quick Shop</h5>
+              <ul className="list-unstyled mt-3">
+                <li><a href="#" className="text-white text-decoration-none">Perfume Sprays</a></li>
+                <li><a href="#" className="text-white text-decoration-none">Solid Balms</a></li>
+                <li><a href="#" className="text-white text-decoration-none">Beard & Body Care</a></li>
+                <li><a href="#" className="text-white text-decoration-none">Scented Candles & Home</a></li>
+              </ul>
+            </Col>
+
+            <Col md={3} sm={6} className="mb-4">
+              <h5 className="fw-bold">Stay Connected</h5>
+              <p className="mt-3">Receive 10% off your first order.</p>
+              <Form className="d-flex mb-3">
+                <Form.Control type="email" placeholder="Email address" className="me-2 rounded-0" />
+                <Button variant="light" className="rounded-0">Subscribe</Button>
+              </Form>
+              <div className="d-flex gap-3 fs-5">
+                <a href="https://www.instagram.com/mkmparfum?igsh=eTJ2OGIzeW04c245"><FaInstagram className="text-white" size={40} /></a>
+                <a href="#"><FaYoutube className="text-white" size={40} /></a>
+                <a href="https://www.facebook.com/share/1J3XV5wR3T/"><FaFacebook className="text-white" size={40} /></a>
+              </div>
+            </Col>
+          </Row>
+
+          {/* <hr className="border-secondary" />
+
+          <Row className="pt-3 align-items-center">
+            <Col md={6} className="text-center text-md-start mb-2 mb-md-0">
+              <small>© 2025 MKM Parfum. All rights reserved. - Designed in India</small>
+            </Col>
+            <Col md={6} className="text-center text-md-end"> */}
+          {/*<FaCcVisa className="me-3 fs-4" />
+              <FaCcMastercard className="me-3 fs-4" />
+              <SiUpwork className="fs-4" />*/} {/* Replace with real UPI icon */}
+          {/* </Col>
+          </Row> */}
         </Container>
+
+
         <hr
           style={{
-            background: "black",
-            color: "black",
-            borderColor: "black",
+            background: "white",
+            color: "white",
+            borderColor: "white",
             height: "1.5spx",
           }}
         />
@@ -245,15 +254,15 @@ const Footer = () => {
           <FaSquareWhatsapp size={40} />
         </Link>
       )}
-      <ScrollToTop
+      {/* <ScrollToTop
         smooth
-        color="#706C61"
+        color="#fff"
         height="20"
         style={{
           backgroundColor: "#E1F4F3",
-          border: "2px solid #706C61"
+          border: "2px solid #fff"
         }}
-      />
+      /> */}
     </>
   );
 };

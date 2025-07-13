@@ -1,8 +1,8 @@
 #footer {
   position: relative;
   font-weight: 400;
-  color: #706C61;
-  background-color: #fff;
+  color: #fff;
+  background-color: #000;
   border-top: 3px solid #706C61 !important;
 
   
@@ -16,10 +16,10 @@
   }
 p{
   font-weight: 600;
-  color: #706C61;
+  color: #fff;
 }
   a {
-    color: #706C61;
+    color: #fff;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     transition: 0.3s;
@@ -78,14 +78,14 @@ p{
 
   .newsbtn {
     background-color: #E1F4F3;
-    color: #706C61;
+    color: #fff;
     border: 2px solid #706C61;
   }
   .input-group{
     border: 2px solid #706C61;
   }
   ::placeholder{
-    color: #706C61;
+    color: #fff;
   }
 
 
