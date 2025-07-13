@@ -47,10 +47,6 @@ const ingredient = () => {
                 </Col>
                 <Col xs={12} md={4} className={styles.ctgrybox}>
                     <div style={{ border: '1px solid #000', zIndex: '1' }}>
-                        {/* <div style={{ position: 'absolute', bottom: '1rem', right: '3rem' }}>
-                            <h2 style={{ fontFamily: 'Quentin, sans-serif' }}>Floral</h2>
-                            <p>For All Season</p>
-                        </div> */}
                         <Image
                             style={{ position: 'relative', left: '0.5rem', top: '0.5rem', zIndex: '-1' }}
                             src="/images/flvr3.png"
