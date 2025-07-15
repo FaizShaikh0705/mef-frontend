@@ -179,12 +179,13 @@ const ProductDetailsContainer = ({
 
   };
 
-  const user = useSelector((state) => state.user);
+  const user = useSelector((state) => state.user?.currentUser);
+  
 
   const handleFormSubmit = async (values, actions) => {
     try {
       const response = await publicRequest.post("/reviews", {
-        userId: user.currentUser._id,
+        userId: user?._id || "",
         UserName: values.username,
         email: values.email,
         postLongDetail: values.message,

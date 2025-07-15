@@ -34,7 +34,7 @@ export async function getStaticPaths() {
 
     return {
         paths,
-        fallback: false,
+        fallback: 'blocking',
     };
 }
 
@@ -51,6 +51,7 @@ export async function getStaticProps({ params }) {
         props: {
             blogDetailsData: blogDetailsData[key], // Access the specific blog using the key
         },
+        revalidate: 10,
     };
 }
 
