@@ -9,7 +9,7 @@ const register = () => {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "qirah",
-        "url": "https://www.qirah-haircare.com",
+        "url": "https://www.mkmparfum.com",
         "logo": "https://admin.thewholetruthfoods.com/wp/wp-content/uploads/2021/01/logo-top.svg",
         "founder": "jitu karsan",
         "foundingDate": "2009",

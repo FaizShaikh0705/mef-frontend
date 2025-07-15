@@ -30,7 +30,7 @@ const Index = () => {
               <p>
                 This privacy statement describes how MKM Parfum collects and
                 uses the personal information you provide on our Web site:
-                www.qirah-haircare.com It also describes the choices available to you
+                www.mkmparfum.com It also describes the choices available to you
                 regarding our use of your personal information and how you can
                 access and update this information.
               </p>
