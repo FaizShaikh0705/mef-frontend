@@ -185,10 +185,10 @@ const Footer = () => {
             <Col md={3} sm={6} className="mb-4">
               <h5 className="fw-bold">Quick Shop</h5>
               <ul className="list-unstyled mt-3">
-                <li><a href="#" className="text-white text-decoration-none">Perfume Sprays</a></li>
-                <li><a href="#" className="text-white text-decoration-none">Solid Balms</a></li>
-                <li><a href="#" className="text-white text-decoration-none">Beard & Body Care</a></li>
-                <li><a href="#" className="text-white text-decoration-none">Scented Candles & Home</a></li>
+                <li><a href="commingSoon" className="text-white text-decoration-none">Perfume Sprays</a></li>
+                <li><a href="commingSoon" className="text-white text-decoration-none">Solid Balms</a></li>
+                <li><a href="commingSoon" className="text-white text-decoration-none">Beard & Body Care</a></li>
+                <li><a href="commingSoon" className="text-white text-decoration-none">Scented Candles & Home</a></li>
               </ul>
             </Col>
 
