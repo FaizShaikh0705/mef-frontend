@@ -176,7 +176,7 @@ const Footer = () => {
               <h5 className="fw-bold">Customer Care</h5>
               <ul className="list-unstyled mt-3">
                 <li><a href="/contact" className="text-white text-decoration-none">Contact Us</a></li>
-                <li><a href="#" className="text-white text-decoration-none">FAQ</a></li>
+                <li><a href="faq" className="text-white text-decoration-none">FAQ</a></li>
                 <li><a href="/shipping" className="text-white text-decoration-none">Shipping & Returns</a></li>
                 <li><a href="/privacy" className="text-white text-decoration-none">Privacy Policy</a></li>
               </ul>

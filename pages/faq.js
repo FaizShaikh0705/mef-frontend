@@ -2,9 +2,9 @@ import { NextSeo } from 'next-seo';
 import MasterLayout from '../src/components/layouts/master';
 import SeoSchema from "../src/components/seo/schema";
 import axios from 'axios';
-import Refund from '../src/components/refund/index'
+import Faq from '../src/components/faq/index'
 
-const refund = () => {
+const faq = () => {
     let schemaData = {
         "@context": "https://schema.org",
         "@type": "Organization",
@@ -21,13 +21,14 @@ const refund = () => {
             "https://www.youtube.com/channel/"
         ]
     }
-  return (
-    <>
-    <NextSeo title="MKM PARFUM" description="MKM PARFUM" canonical="/refund" />
-            {/* <SeoSchema data={schemaData} /> */}  
-            <Refund />
-    </>
-  )
+    return (
+        <>
+            <NextSeo title="MKM PARFUM" description="MKM PARFUM" canonical="/faq" />
+            {/* <SeoSchema data={schemaData} /> */}
+            <Faq />
+        </>
+    )
+
 }
 
-export default refund
+export default faq
