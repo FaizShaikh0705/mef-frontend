@@ -29,7 +29,7 @@ const Index = () => {
             <Col lg={12}>
               <h3 className="text-center my-5">REFUND POLICY</h3>
               <h5 className=" mb-5">
-               This item is non-returnable due to the nature of the product
+                HOW DO I KNOW IF AN ITEM IS ELIGIBLE FOR RETURN?
               </h5>
               <div className="d-flex">
                 {/* <Image 
@@ -38,16 +38,19 @@ const Index = () => {
                height='10'
                width='80'
                 /> */}
-                <p className={`${styles['para']} `}> For a Damaged, Defective, Wrong or expired item, you can request a refund or replacement within 5 days of delivery</p>
+                <p className={`${styles['para']} `}> Our products are not eligible for Return/Exchange</p>
+              </div>
+              <h5 className=" mb-5">
+                WHAT IF I RECEIVE A DAMAGED / DEFECTIVE /WRONG PRODUCT?
+              </h5>
+              <div className="d-flex">
+                <p className={`${styles['para']} `}> We Quality Control all our shipping and packaging processes, but in rare circumstances, if you do receive a damaged, defective/wrong product or an incomplete order, simply get in touch with us within 24 hours of receiving your order with pictures at em5support[@]indiainfotech.com and we will take care of the rest.</p>
               </div>
               <div className="d-flex">
-                {/* <Image 
-                src="/images/return1.png"
-                alt="return1"
-               height='10'
-               width='70'
-                /> */}
-                <p className={`${styles['para']} `}> You Will need to share the image of the item  and its defects through your Orders for a refund/replacement</p>
+                <p className={`${styles['para']} `}> For failed online transactions, refunds are automatically processed to the source account in 7 working days.</p>
+              </div>
+              <div className="d-flex">
+                <p className={`${styles['para']} `}> In case of damaged or defective product, please share an unboxing video for the claim processing, post examine a refund or replacement will be issued in 4-7 days.</p>
               </div>
             </Col>
           </Row>
