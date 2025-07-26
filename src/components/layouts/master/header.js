@@ -56,6 +56,8 @@ const Header = ({ productData: initialProductData, sluginput }) => {
 
   const redirectToAnotherPage = (href) => {
     handleClose(); // Close the Offcanvas
+    handleClose1();
+    handleClose2();
     router.push(href); // Redirect to the specified page
   };
 
