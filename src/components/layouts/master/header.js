@@ -184,7 +184,7 @@ const Header = ({ productData: initialProductData, sluginput }) => {
             {/* Full Nav for Desktop */}
             <div className="d-none d-lg-flex">
               <Link className="nav-link" href='' onClick={handleShow}>
-                <div className={styles['search-icon']}>
+                <div className={styles['search-icon1']}>
                   <IoSearch />
                 </div>
               </Link>
