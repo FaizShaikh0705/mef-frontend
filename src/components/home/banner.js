@@ -121,7 +121,7 @@ const HomeBanner = () => {
                 src={isMoble ? "/images/mobile2.png" : "/images/bannermobile.png"}
                 alt="Banner"
                 fill
-                priority // Loads immediately (for first banner)
+                // priority // Loads immediately (for first banner)
                 sizes="(max-width: 767px) 100vw, 100vw"
                 className={styles.bannerImage}
               />
@@ -138,7 +138,7 @@ const HomeBanner = () => {
                 src={isMoble ? "/images/mobile2.png" : "/images/bannermobile.png"}
                 alt="Banner"
                 fill
-                priority // Loads immediately (for first banner)
+                // priority // Loads immediately (for first banner)
                 sizes="(max-width: 767px) 100vw, 100vw"
                 className={styles.bannerImage}
               />
@@ -155,7 +155,7 @@ const HomeBanner = () => {
                 src={isMoble ? "/images/mobile2.png" : "/images/bannermobile.png"}
                 alt="Banner"
                 fill
-                priority // Loads immediately (for first banner)
+                // priority // Loads immediately (for first banner)
                 sizes="(max-width: 767px) 100vw, 100vw"
                 className={styles.bannerImage}
               />
@@ -172,7 +172,7 @@ const HomeBanner = () => {
                 src={isMoble ? "/images/mobile2.png" : "/images/bannermobile.png"}
                 alt="Banner"
                 fill
-                priority // Loads immediately (for first banner)
+                // priority // Loads immediately (for first banner)
                 sizes="(max-width: 767px) 100vw, 100vw"
                 className={styles.bannerImage}
               />

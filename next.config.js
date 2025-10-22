@@ -6,7 +6,8 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ['firebasestorage.googleapis.com'],
-    quality: 100
+    quality: 80,
+    unoptimized: true,
   },
   swcMinify: true,
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {

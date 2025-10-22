@@ -145,7 +145,7 @@ const blogContent = ({ blogData: initialBlogData }) => {
                         {Object.entries(blogData).filter((status) => status[1].postIsActiveStatus == 1).map((item) => {
                             return (
                                 <Col lg={4} className={styles['cardh']}>
-                                    {console.log(item)}
+                                    {/* {console.log(item)} */}
                                     <div className={`card item shadow h-100 ${styles['']}`}>
                                         <Image
                                             objectFit="cover"
