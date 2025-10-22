@@ -79,17 +79,17 @@ const Header = ({ productData: initialProductData, sluginput }) => {
     });
   }
 
-  // const handleNavClose = () => {
-  //   document.getElementById("navcolbtn").click();
-  // };
+  const handleNavClose = () => {
+    document.getElementById("navcolbtn").click();
+  };
 
-  // if (isMobile) {
-  //   $(".nav-link").click(function () {
-  //     if (!$(this).hasClass("dropdown-toggle")) {
-  //       handleNavClose();
-  //     }
-  //   });
-  // }
+  if (isMobile) {
+    $(".nav-link").click(function () {
+      if (!$(this).hasClass("dropdown-toggle")) {
+        handleNavClose();
+      }
+    });
+  }
 
   const currentUser = useSelector((state) => state.user);
   // console.log(currentUser)
@@ -222,7 +222,7 @@ const Header = ({ productData: initialProductData, sluginput }) => {
                   </Link>
                   <Link
                     className={`${styles["pad-a"]} nav-link pe-5`}
-                    href="/#shop"
+                    href="/product"
                   >
                     Shop
                   </Link>

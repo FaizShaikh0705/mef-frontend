@@ -112,11 +112,11 @@ const Product = ({ productData: initialProductData }) => {
   // const handleShow = () => setShow(true);
 
   return (
-    <section className={`${styles["products-main"]} py-4`} id="shop">
+    <section className={`${styles["products-main"]} py-5 mt-5`} id="shop">
       <Container>
         <Row className=" text-center">
           <h3 style={{ color: "#706C61" }} className="">Our Popular Products</h3>
-          <h2 style={{ color: "#706C61" }} className="mb-4">Best Sellers</h2>
+          <h2 style={{ color: "#706C61" }} className="mb-4">Best Parfum</h2>
           {product &&
             Object.entries(product)
               // .filter(([key, item]) => item.postIsActiveStatus === "1" && item.category === "Hair Oil")
