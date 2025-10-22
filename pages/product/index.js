@@ -32,14 +32,14 @@ const Product = ({ productData }) => {
 export default Product;
 
 
-// const formatDate = (timestamp) => {
-//     const dateObject = new Date(timestamp);
-//     return dateObject.toLocaleDateString('en-US', {
-//         day: '2-digit',
-//         month: 'short',
-//         year: 'numeric',
-//     });
-// };
+const formatDate = (timestamp) => {
+    const dateObject = new Date(timestamp);
+    return dateObject.toLocaleDateString('en-US', {
+        day: '2-digit',
+        month: 'short',
+        year: 'numeric',
+    });
+};
 
 export async function getStaticProps() {
     const res = await publicRequest.get("/products");

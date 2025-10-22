@@ -5,37 +5,72 @@
     margin-top: 23px;
   }
 
-  .learn-h-sec1 {
-    background: url(../../../public/images/bannermobile.png) no-repeat bottom / cover;
-    padding: 0 0 36% 0;
+  // .learn-h-sec1 {
+  //   background: url(../../../public/images/bannermobile.png) no-repeat bottom / cover;
+  //   padding: 0 0 36% 0;
+  //   position: relative;
+
+  //   //margin-top: 50px;
+  //   @media (max-width: 767px) {
+  //     background: url(../../../public/images/mobile2.png) no-repeat center / cover;
+  //     // margin-top: 10%;
+  //     // margin-top: 10%;
+  //     padding: 0 0 136% 0;
+  //     text-align: left;
+  //   }
+
+  //   .btn {
+  //     position: absolute;
+  //     left: 33%;
+  //     top: 73%;
+  //     width: 13%;
+  //     height: 11%;
+  //     font-size: 0;
+
+  //     // background-color: #08089b;
+  //     @media (max-width: 767px) {
+  //       left: 39%;
+  //       top: 31%;
+  //       width: 22%;
+  //       height: 5%;
+  //     }
+  //   }
+  // }
+
+  .bannerWrapper {
     position: relative;
-
-    //margin-top: 50px;
+    width: 100%;
+    height: 0;
+    padding-bottom: 36%; // Desktop aspect ratio
+    overflow: hidden;
+  
     @media (max-width: 767px) {
-      background: url(../../../public/images/mobile2.png) no-repeat center / cover;
-      // margin-top: 10%;
-      // margin-top: 10%;
-      padding: 0 0 136% 0;
-      text-align: left;
-    }
-
-    .btn {
-      position: absolute;
-      left: 33%;
-      top: 73%;
-      width: 13%;
-      height: 11%;
-      font-size: 0;
-
-      // background-color: #08089b;
-      @media (max-width: 767px) {
-        left: 39%;
-        top: 31%;
-        width: 22%;
-        height: 5%;
-      }
+      padding-bottom: 136%; // Mobile height adjustment
     }
   }
+  
+  .bannerImage {
+    object-fit: cover;
+    object-position: bottom;
+    z-index: 1;
+  }
+
+  // .overlayContent {
+  //   position: absolute;
+  //   bottom: 10%;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   z-index: 2;
+  // }
+
+  // .btn {
+  //   background-color: #000;
+  //   color: #fff;
+  //   padding: 10px 20px;
+  //   border-radius: 6px;
+  //   text-decoration: none;
+  // }
+
 
   .learn-h-sec2 {
     background: url(../../../public/images/1.png) no-repeat bottom / cover;
@@ -422,9 +457,9 @@
   color: #706C61;
 }
 
-.rbtn1{
+.rbtn1 {
   color: #000;
-text-decoration: none;
+  text-decoration: none;
 }
 
 .menc {

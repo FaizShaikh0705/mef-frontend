@@ -233,7 +233,7 @@ const Header = ({ productData: initialProductData, sluginput }) => {
                     Blog
                   </Link>
                   <Link
-                    className={`${styles["pad-a"]} nav-link pe-5`}
+                    className={`${styles["pad-a"]} nav-link`}
                     href="/contact"
                   >
                     Contact

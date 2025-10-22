@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Container, Row, Col, Button } from "react-bootstrap";
@@ -14,6 +14,17 @@ import styles from "./home.module.scss";
 // }
 
 const HomeBanner = () => {
+  const [isMoble, setIsMobile] = useState(false)
+
+
+  // Detect screen width for responsive image
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 767);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   // const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
   //   ssr: false,
   // });
@@ -48,15 +59,15 @@ const HomeBanner = () => {
                 autoplayTimeout={5000}
                 dots={false}
               > */}
-        <Carousel fade indicators={false}>
+        {/* <Carousel fade indicators={false}>
           <Carousel.Item interval={3000}>
             <div className={styles["learn-h-sec1"]}>
               <Link href="#shop" className={styles["btn"]}>
                 Shop Now
               </Link>
             </div>
-          </Carousel.Item>
-          <Carousel.Item interval={3000}>
+          </Carousel.Item> */}
+        {/* <Carousel.Item interval={3000}>
             <div className={styles["learn-h-sec2"]}>
               <Link href="#shop" className={styles["btn"]}>
                 Shop Now
@@ -84,6 +95,95 @@ const HomeBanner = () => {
               </Link>
             </div>
           </Carousel.Item>
+
+          </Carousel> */}
+        <Carousel fade indicators={false}>
+          <Carousel.Item interval={3000}>
+            <div className={styles.bannerWrapper}>
+              <Image
+                src={isMoble ? "/images/mobile2.png" : "/images/bannermobile.png"}
+                alt="Banner"
+                fill
+                priority // Loads immediately (for first banner)
+                sizes="(max-width: 767px) 100vw, 100vw"
+                className={styles.bannerImage}
+              />
+              <div className={styles.overlayContent}>
+                <Link href="#shop" className={styles.btn}>
+                  Shop Now
+                </Link>
+              </div>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item interval={3000}>
+            <div className={styles.bannerWrapper}>
+              <Image
+                src={isMoble ? "/images/mobile2.png" : "/images/bannermobile.png"}
+                alt="Banner"
+                fill
+                priority // Loads immediately (for first banner)
+                sizes="(max-width: 767px) 100vw, 100vw"
+                className={styles.bannerImage}
+              />
+              <div className={styles.overlayContent}>
+                <Link href="#shop" className={styles.btn}>
+                  Shop Now
+                </Link>
+              </div>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item interval={3000}>
+            <div className={styles.bannerWrapper}>
+              <Image
+                src={isMoble ? "/images/mobile2.png" : "/images/bannermobile.png"}
+                alt="Banner"
+                fill
+                priority // Loads immediately (for first banner)
+                sizes="(max-width: 767px) 100vw, 100vw"
+                className={styles.bannerImage}
+              />
+              <div className={styles.overlayContent}>
+                <Link href="#shop" className={styles.btn}>
+                  Shop Now
+                </Link>
+              </div>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item interval={3000}>
+            <div className={styles.bannerWrapper}>
+              <Image
+                src={isMoble ? "/images/mobile2.png" : "/images/bannermobile.png"}
+                alt="Banner"
+                fill
+                priority // Loads immediately (for first banner)
+                sizes="(max-width: 767px) 100vw, 100vw"
+                className={styles.bannerImage}
+              />
+              <div className={styles.overlayContent}>
+                <Link href="#shop" className={styles.btn}>
+                  Shop Now
+                </Link>
+              </div>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item interval={3000}>
+            <div className={styles.bannerWrapper}>
+              <Image
+                src={isMoble ? "/images/mobile2.png" : "/images/bannermobile.png"}
+                alt="Banner"
+                fill
+                priority // Loads immediately (for first banner)
+                sizes="(max-width: 767px) 100vw, 100vw"
+                className={styles.bannerImage}
+              />
+              <div className={styles.overlayContent}>
+                <Link href="#shop" className={styles.btn}>
+                  Shop Now
+                </Link>
+              </div>
+            </div>
+          </Carousel.Item>
+
 
 
 
@@ -134,7 +234,7 @@ const HomeBanner = () => {
         </Carousel>
         {/* </OwlCarousel> */}
 
-      </section>
+      </section >
     </>
   );
 };

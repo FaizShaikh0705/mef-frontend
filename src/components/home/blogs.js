@@ -5,7 +5,7 @@ import Link from 'next/link';
 import style from "./home.module.scss"
 
 const blogs = ({ blogData }) => {
-    console.log("faiz", blogData)
+    // console.log("faiz", blogData)
     return (
         <>
             <section className='my-5'>

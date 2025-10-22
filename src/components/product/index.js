@@ -14,7 +14,7 @@ import Form from "react-bootstrap/Form";
 import { addProduct } from "../../redux/cartRedux";
 import { useDispatch, useSelector } from "react-redux";
 import { publicRequest } from "../../requestMethods";
-import * as fbq from '../../../lib/fpixel';
+// import * as fbq from '../../../lib/fpixel';
 
 
 const Product = ({ productData: initialProductData }) => {
@@ -184,59 +184,6 @@ const Product = ({ productData: initialProductData }) => {
                   </Col>
                 );
               })}
-          {/* Combo Products */}
-          {comboproduct &&
-            Object.entries(comboproduct)
-              .filter(([key, item]) => item.postIsActiveStatus === "1").sort((a, b) => a[1].postPositionNo - b[1].postPositionNo)
-              .sort((a, b) => a[1].postPositionNo - b[1].postPositionNo)
-              .map(([key, item], index) => {
-                const firstImage = item.images.length > 0 ? item.images[3] : "";
-                return (
-                  <Col lg={3} key={`combo-${key}`} className="col-6 pb-4">
-                    <Card className={`${styles["product-card"]} h-100`}>
-                      <Link
-                        href={`/combo/${item.sluginput.toLowerCase().split(" ").join("-")}`}
-                      >
-                        <Card.Img
-                          variant="top"
-                          alt="firstImage"
-                          src={firstImage}
-                          className="mt-1"
-                        />
-                      </Link>
-                      <Card.Body className="justify-content-center">
-                        <Card.Title className={styles['card-heading']}>
-                          {item.comboName}
-                        </Card.Title>
-                        <Card.Text className={styles['price-txt']}>
-                          {/* {item.strikeOutName == 0 ? 
-                            (<>Rs. {item.comboPrice}.00</>) : 
-                            (<>
-                              <span className={styles['strike-price']}>Rs. {item.strikeOutName}.00</span> 
-                              Rs. {item.postPriceName}.00
-                            </>)
-                          } */}
-                          <span className={styles['']}>Rs. {item.comboPrice}.00</span>
-                          {/* <span className={`${styles['off-box']} rounded-3`}>
-                            {item.discoutpercentage}% Off
-                          </span> */}
-                        </Card.Text>
-                        <InputGroup className="justify-content-center">
-                          <Button
-                            onClick={() => addProductInCart(item, key)}
-                            className={styles["add-cart"]}
-                            variant="outline-dark"
-                            id="button-addon2"
-                          >
-                            ADD TO CART
-                          </Button>
-                        </InputGroup>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                );
-              })}
-
           <Modal
             centered
             show={show}

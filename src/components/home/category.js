@@ -107,7 +107,7 @@ const category = () => {
                                 </div>
                             </div>
                         </Link>
-                        <Link href={`/commingSoon`}>
+                        {/* <Link href={`/commingSoon`}>
                             <div className={styles.ctgrybox}>
                                 <div style={{ border: '1px solid #000', zIndex: '1' }}>
                                     <div style={{ position: 'absolute', bottom: '0.5rem', right: '3rem' }}>
@@ -126,7 +126,7 @@ const category = () => {
                                     />
                                 </div>
                             </div>
-                        </Link>
+                        </Link> */}
                         <Link href={`/commingSoon`}>
                             <div className={styles.ctgrybox}>
                                 <div style={{ border: '1px solid #000', zIndex: '1' }}>
