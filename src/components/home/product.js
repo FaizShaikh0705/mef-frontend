@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import styles from "../product/product.module.scss";
@@ -120,66 +122,67 @@ const Product = ({ productData: initialProductData }) => {
                 <Row className=" text-center">
                     <h3 style={{ color: "#706C61" }} className="">Our Popular Products</h3>
                     <h2 style={{ color: "#706C61" }} className="mb-4">Best Sellers</h2>
-                    <OwlCarousel className="owl-theme" loop margin={10} nav dots={false} responsive={{
-                        0: { items: 1 },
-                        600: { items: 2 },
-                        1000: { items: 4 }
-                    }}>
-                        {product &&
-                            Object.entries(product)
-                                // .filter(([key, item]) => item.postIsActiveStatus === "1" && item.category === "Hair Oil")
-                                .filter(([key, item]) => item.postIsActiveStatus === "1").sort((a, b) => a[1].postPositionNo - b[1].postPositionNo)
-                                .map(([key, item], index) => {
-                                    const firstImage =
-                                        item.postImage.length > 0 ? item.postImage[3] : "";
-                                    return (
-                                        <Col lg={3} key={key} className="col-12 pb-4">
-                                            {/* <Link href={/product/${(item[1].postTopicName).toLowerCase().split(" ").join("-")}}> */}
-                                            <Card className={`${styles["product-card"]} h-100`}>
-                                                <Link
-                                                    key={key}
-                                                    href={`/product/${item.sluginput
-                                                        .toLowerCase()
-                                                        .split(" ")
-                                                        .join("-")}`}
-                                                >
+                    {product && Object.keys(product).length > 0 ? (
+                        <OwlCarousel className="owl-theme" loop margin={10} nav dots={false} responsive={{
+                            0: { items: 1 },
+                            600: { items: 2 },
+                            1000: { items: 4 }
+                        }}>
+                            {product &&
+                                Object.entries(product)
+                                    // .filter(([key, item]) => item.postIsActiveStatus === "1" && item.category === "Hair Oil")
+                                    .filter(([key, item]) => item.postIsActiveStatus === "1").sort((a, b) => a[1].postPositionNo - b[1].postPositionNo)
+                                    .map(([key, item], index) => {
+                                        const firstImage =
+                                            item.postImage.length > 0 ? item.postImage[3] : "";
+                                        return (
+                                            <Col lg={3} key={key} className="col-12 pb-4">
+                                                {/* <Link href={/product/${(item[1].postTopicName).toLowerCase().split(" ").join("-")}}> */}
+                                                <Card className={`${styles["product-card"]} h-100`}>
+                                                    <Link
+                                                        key={key}
+                                                        href={`/product/${item.sluginput
+                                                            .toLowerCase()
+                                                            .split(" ")
+                                                            .join("-")}`}
+                                                    >
 
-                                                    <Card.Img
-                                                        variant="top"
-                                                        alt="firstImage"
-                                                        src={firstImage}
-                                                    // className="mt-1"
-                                                    />
-                                                </Link>
-                                                <Card.Body className="justify-content-center">
-                                                    <Card.Title className={styles['card-heading']}>
-                                                        {selectedVariants[key]?.variantName ? (
-                                                            <>
-                                                                {item.postTopicName}{" "}
-                                                                {selectedVariants[key].variantName}
-                                                            </>
-                                                        ) : (
-                                                            <>
-                                                                {item.postTopicName} {item.postVariantName2 === "" ? "" : `(${item.postVariantName1})`}
-                                                            </>
-                                                        )}
-                                                    </Card.Title>
-                                                    <Card.Text className={styles['price-txt']}>
-                                                        {selectedVariants[key]?.price ? (
-                                                            <>Rs. {selectedVariants[key].price}.00</>
-                                                        ) : (
-                                                            <>
-                                                                {item.strikeOutName == 0 ?
-                                                                    (<> Rs. {item.postPriceName}.00</>) : (<><span className={styles['strike-price']}>Rs. {item.strikeOutName}.00</span> Rs. {item.postPriceName}.00</>)}
-                                                            </>)}
-                                                        <span className={`${styles['off-box']} rounded-3`}>
-                                                            {item.discoutpercentage}% Off
-                                                        </span>
-                                                    </Card.Text>
-                                                    {/* <Card.Title>{item[1].postTopicName}</Card.Title>
+                                                        <Card.Img
+                                                            variant="top"
+                                                            alt="firstImage"
+                                                            src={firstImage}
+                                                        // className="mt-1"
+                                                        />
+                                                    </Link>
+                                                    <Card.Body className="justify-content-center">
+                                                        <Card.Title className={styles['card-heading']}>
+                                                            {selectedVariants[key]?.variantName ? (
+                                                                <>
+                                                                    {item.postTopicName}{" "}
+                                                                    {selectedVariants[key].variantName}
+                                                                </>
+                                                            ) : (
+                                                                <>
+                                                                    {item.postTopicName} {item.postVariantName2 === "" ? "" : `(${item.postVariantName1})`}
+                                                                </>
+                                                            )}
+                                                        </Card.Title>
+                                                        <Card.Text className={styles['price-txt']}>
+                                                            {selectedVariants[key]?.price ? (
+                                                                <>Rs. {selectedVariants[key].price}.00</>
+                                                            ) : (
+                                                                <>
+                                                                    {item.strikeOutName == 0 ?
+                                                                        (<> Rs. {item.postPriceName}.00</>) : (<><span className={styles['strike-price']}>Rs. {item.strikeOutName}.00</span> Rs. {item.postPriceName}.00</>)}
+                                                                </>)}
+                                                            <span className={`${styles['off-box']} rounded-3`}>
+                                                                {item.discoutpercentage}% Off
+                                                            </span>
+                                                        </Card.Text>
+                                                        {/* <Card.Title>{item[1].postTopicName}</Card.Title>
                                             <Card.Text>Rs. {item[1].postPriceName}.00</Card.Text> */}
-                                                    <InputGroup className=" justify-content-center">
-                                                        {/* {item.postVariantName2 == "" ? "" :
+                                                        <InputGroup className=" justify-content-center">
+                                                            {/* {item.postVariantName2 == "" ? "" :
                             <DropdownButton
                               variant="outline-dark"
                               title={
@@ -213,73 +216,25 @@ const Product = ({ productData: initialProductData }) => {
                               </Dropdown.Item>
                             </DropdownButton>
                           } */}
-                                                        <Button
-                                                            onClick={() => addProductInCart(item, key)}
-                                                            className={styles["add-cart"]}
-                                                            variant="outline-dark"
-                                                            id="button-addon2"
-                                                        >
-                                                            ADD TO CART
-                                                        </Button>
-                                                    </InputGroup>
-                                                </Card.Body>
-                                            </Card>
-                                        </Col>
-                                    );
-                                })}
-                        {/* Combo Products */}
-                        {comboproduct &&
-                            Object.entries(comboproduct)
-                                .filter(([key, item]) => item.postIsActiveStatus === "1").sort((a, b) => a[1].postPositionNo - b[1].postPositionNo)
-                                .sort((a, b) => a[1].postPositionNo - b[1].postPositionNo)
-                                .map(([key, item], index) => {
-                                    const firstImage = item.images.length > 0 ? item.images[3] : "";
-                                    return (
-                                        <Col lg={3} key={`combo-${key}`} className="col-6 pb-4">
-                                            <Card className={`${styles["product-card"]} h-100`}>
-                                                <Link
-                                                    href={`/combo/${item.sluginput.toLowerCase().split(" ").join("-")}`}
-                                                >
-                                                    <Card.Img
-                                                        variant="top"
-                                                        alt="firstImage"
-                                                        src={firstImage}
-                                                        className="mt-1"
-                                                    />
-                                                </Link>
-                                                <Card.Body className="justify-content-center">
-                                                    <Card.Title className={styles['card-heading']}>
-                                                        {item.comboName}
-                                                    </Card.Title>
-                                                    <Card.Text className={styles['price-txt']}>
-                                                        {/* {item.strikeOutName == 0 ? 
-                            (<>Rs. {item.comboPrice}.00</>) : 
-                            (<>
-                              <span className={styles['strike-price']}>Rs. {item.strikeOutName}.00</span> 
-                              Rs. {item.postPriceName}.00
-                            </>)
-                          } */}
-                                                        <span className={styles['']}>Rs. {item.comboPrice}.00</span>
-                                                        {/* <span className={`${styles['off-box']} rounded-3`}>
-                            {item.discoutpercentage}% Off
-                          </span> */}
-                                                    </Card.Text>
-                                                    <InputGroup className="justify-content-center">
-                                                        <Button
-                                                            onClick={() => addProductInCart(item, key)}
-                                                            className={styles["add-cart"]}
-                                                            variant="outline-dark"
-                                                            id="button-addon2"
-                                                        >
-                                                            ADD TO CART
-                                                        </Button>
-                                                    </InputGroup>
-                                                </Card.Body>
-                                            </Card>
-                                        </Col>
-                                    );
-                                })}
-                    </OwlCarousel>
+                                                            <Button
+                                                                onClick={() => addProductInCart(item, key)}
+                                                                className={styles["add-cart"]}
+                                                                variant="outline-dark"
+                                                                id="button-addon2"
+                                                            >
+                                                                ADD TO CART
+                                                            </Button>
+                                                        </InputGroup>
+                                                    </Card.Body>
+                                                </Card>
+                                            </Col>
+                                        );
+                                    })}
+
+                        </OwlCarousel>
+                    ) : (
+                        <p className="text-center py-5">Loading Products...</p>
+                    )}
                     <Modal
                         centered
                         show={show}
